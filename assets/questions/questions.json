@@ -1,0 +1,62 @@
+{
+    "quiz": {
+      "questions": [
+        {
+          "question": "What is traditionally hidden inside a Christmas pudding?",
+          "choices": [
+            "A coin",
+            "A bell",
+            "A ring",
+            "A feather",
+            "A button"
+          ],
+          "answer": "A coin"
+        },
+        {
+          "question": "Which country started the tradition of putting up a Christmas tree?",
+          "choices": [
+            "United States",
+            "Germany",
+            "England",
+            "France",
+            "Canada"
+          ],
+          "answer": "Germany"
+        },
+        {
+          "question": "What are the two other names for Santa Claus?",
+          "choices": [
+            "Father Christmas and Saint Nicholas",
+            "Kris Kringle and Father Time",
+            "Pere Noel and Old Man Winter",
+            "Saint Nicholas and Kris Kringle",
+            "Father Time and Pere Noel"
+          ],
+          "answer": "Saint Nicholas and Kris Kringle"
+        },
+        {
+          "question": "In the song 'Frosty the Snowman,' what made Frosty come to life?",
+          "choices": [
+            "An enchanted scarf",
+            "A magic hat",
+            "A carrot nose",
+            "Christmas spirit",
+            "Snowflakes"
+          ],
+          "answer": "A magic hat"
+        },
+        {
+          "question": "What popular Christmas song was actually written for Thanksgiving?",
+          "choices": [
+            "Winter Wonderland",
+            "Jingle Bells",
+            "Let It Snow",
+            "Santa Claus is Coming to Town",
+            "Frosty the Snowman"
+          ],
+          "answer": "Jingle Bells"
+        }
+      ]
+    }
+  }
+  
