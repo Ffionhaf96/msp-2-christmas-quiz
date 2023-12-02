@@ -36,3 +36,32 @@ The primary audience for "The Christmas Quiz" includes individuals and families 
 - **Discovering Lesser-Known Facts**: It provides an opportunity to learn about intriguing and lesser-known aspects of Christmas, enriching their holiday experience.
 - **Holiday Spirit**: The quiz is a medium to experience joy and festive spirit through an accessible and entertaining digital platform.
 
+- - -
+### Research
+
+#### **Market Review**
+The online festive quiz market is diverse and engaging, catering to a wide range of audiences. Kahoot!'s Christmas Trivia Puzzle blends education with festive fun, attracting educators and families. BuzzFeed's Christmas quizzes focus on pop culture, appealing to younger audiences like Millennials and Gen Z. Sporcle offers a broad range of Christmas-themed trivia, attracting general trivia enthusiasts. JetPunk introduces a competitive edge with timed Christmas quizzes, ideal for those who enjoy a challenge. Lastly, Playbuzz's Christmas personality quizzes offer a personalized, light-hearted experience, appealing to individuals seeking fun insights into their personalities.
+
+[Kahoot! Christmas Trivia Puzzle](https://embed.kahoot.it/fa8f4275-b91d-4866-9505-baf3ef95f52f)
+[BuzzFeed Christmas Trivia Quizzes](https://www.buzzfeed.com/au/tag/christmas-quiz)
+[Sporcle Christmas Quizzes](https://www.sporcle.com/games/subcategory/christmas)
+[JetPunk Christmas Quizzes](https://www.jetpunk.com/tags/christmas)
+[Playbuzz Christmas Personality Quizzes](https://www.playbuzz.com/quizzes/christmas)
+
+#### **Key Takeaways from Market Review**
+
+* Educational content combined with festive themes is popular (Kahoot!).
+* Pop culture and trivia quizzes attract younger audiences (BuzzFeed).
+* A broad range of topics in quizzes appeals to a wide audience (Sporcle).
+* Timed challenges add a competitive aspect to quizzes (JetPunk).
+* Personalized quizzes provide a unique and engaging user experience (Playbuzz).
+
+- - -
+### User Stories
+In light of the research and defined goals for "The Christmas Quiz," I crafted a set of user stories to guide the development process. Considering the nature of the quiz, it's anticipated that users will engage with it mainly during the festive season.The focus is on providing a delightful first-time experience, with the understanding that some users may revisit for fun or to share with friends and family. The user stories are oriented towards a user engaging with the quiz for the first time or as part of a seasonal activity.
+
+User Story 1) **Discover Festive Knowledge:** I want to participate in an enjoyable online quiz to learn about Christmas traditions, history, and fun facts from around the world.
+User Story 2) **Engaging Visual Content:** I want to see festive-themed images and graphics that enhance my quiz experience and bring the Christmas spirit to life.
+User Story 3) **Understanding Quiz Results:** I want to see a summary of my quiz results to gain insights into what my answers reveal about my knowledge and preferences regarding Christmas.
+User Story 4) **Multi-Device Accessibility:** I want to access the quiz on any device, whether it's my desktop, tablet, or smartphone, ensuring a seamless experience.
+User Story 5) **Ease of Navigation:** I want to navigate the site easily, finding my way through the quiz and any additional festive content without any confusion or difficulty.
