@@ -86,3 +86,41 @@ To enhance the fun and engaging nature of the quiz, the results might also inclu
 * Christmas Movie Recommendations for Family Fun
 
 It's important to note that while the quiz categorizes preferences and interests, it's designed purely for entertainment and festive fun, without any scientific or psychological basis for the categorization.
+
+- - -
+### Design, Layout & Structure
+#### **Wireframes**
+
+I chose to create detailed wireframes for "The Christmas Quiz" using diagrams.net, focusing on the structure, skeleton, and layout, as well as the overall style and appearance of the site. This approach allowed me to make critical design decisions regarding colors, fonts, and layout before starting the coding process. The wireframes were developed for desktop, tablet, and mobile views to ensure that responsiveness was a key consideration from the start.
+
+<details><summary>Welcome Screen</summary>
+<img src="insert">
+The welcome screen wireframe illustrates the initial user interface, with festive design elements and a start button to engage users.
+</details>
+
+<details><summary>Quiz Interface</summary>
+<img src="insert">
+This wireframe shows the quiz layout, including the question and answer options, designed to be user-friendly and visually appealing.
+</details>
+
+<details><summary>Results Screen</summary>
+<img src="insert">
+The results screen wireframe displays how users' festive profiles and suggestions will be presented at the end of the quiz.
+</details>
+
+These wireframes served as a blueprint throughout the development process, ensuring that the final product was aligned with the initial design vision and fully responsive across all devices.
+
+- - -
+#### **Structure**
+
+The structure of "The Christmas Quiz" website is meticulously designed, considering the scope, user and business goals, as well as adhering to the principles of Interaction Design (IXD) to ensure an intuitive user experience.
+
+The site maintains a straightforward structure, with all content, except for a custom 404 error page, contained within a single web page (index.html). The content dynamically changes via JavaScript based on the user's interaction with the quiz. The main divisions within the page that appear and disappear at different stages of the quiz are:
+
+**Welcome:** This section provides a warm introduction with festive visuals. It features a start button that launches the quiz, setting the tone for a fun and engaging Christmas-themed experience.
+**Quiz:** The core gameplay area includes a progress indicator, the quiz question, multiple-choice answer options, and a 'restart quiz' button for users wishing to play again.
+**Results:** Here, users see a summary of their quiz performance, presented in an engaging format such as festive-themed graphics or text descriptions. This section might also include personalized Christmas activity or recipe suggestions based on their answers. Additionally, there's an option to return to the start for those who want to take the quiz again.
+
+There's also a custom 404 error page designed to handle instances where a user lands on a non-existent page. This page includes a link back to index.html, allowing users to easily navigate back to the quiz.
+
+Both the main index.html page and the 404 page feature a non-clickable logo at the top to prevent accidental restarts of the quiz and a footer, including social media links.
