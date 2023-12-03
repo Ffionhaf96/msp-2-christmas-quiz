@@ -118,7 +118,9 @@ The structure of "The Christmas Quiz" website is meticulously designed, consider
 The site maintains a straightforward structure, with all content, except for a custom 404 error page, contained within a single web page (index.html). The content dynamically changes via JavaScript based on the user's interaction with the quiz. The main divisions within the page that appear and disappear at different stages of the quiz are:
 
 **Welcome:** This section provides a warm introduction with festive visuals. It features a start button that launches the quiz, setting the tone for a fun and engaging Christmas-themed experience.
+
 **Quiz:** The core gameplay area includes a progress indicator, the quiz question, multiple-choice answer options, and a 'restart quiz' button for users wishing to play again.
+
 **Results:** Here, users see a summary of their quiz performance, presented in an engaging format such as festive-themed graphics or text descriptions. This section might also include personalized Christmas activity or recipe suggestions based on their answers. Additionally, there's an option to return to the start for those who want to take the quiz again.
 
 There's also a custom 404 error page designed to handle instances where a user lands on a non-existent page. This page includes a link back to index.html, allowing users to easily navigate back to the quiz.
