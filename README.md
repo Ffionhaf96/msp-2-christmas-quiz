@@ -119,6 +119,8 @@ The site maintains a straightforward structure, with all content, except for a c
 
 **Welcome:** This section provides a warm introduction with festive visuals. It features a start button that launches the quiz, setting the tone for a fun and engaging Christmas-themed experience.
 
+**House Rules:** This section provides users with clear and concise instructions on how to play the quiz.
+
 **Quiz:** The core gameplay area includes a progress indicator, the quiz question, multiple-choice answer options, and a 'restart quiz' button for users wishing to play again.
 
 **Results:** Here, users see a summary of their quiz performance, presented in an engaging format such as festive-themed graphics or text descriptions. This section might also include personalized Christmas activity or recipe suggestions based on their answers. Additionally, there's an option to return to the start for those who want to take the quiz again.
@@ -126,3 +128,38 @@ The site maintains a straightforward structure, with all content, except for a c
 There's also a custom 404 error page designed to handle instances where a user lands on a non-existent page. This page includes a link back to index.html, allowing users to easily navigate back to the quiz.
 
 Both the main index.html page and the 404 page feature a non-clickable logo at the top to prevent accidental restarts of the quiz and a footer, including social media links.
+
+- - -
+#### **Colour & Design**
+
+The Christmas Quiz web application is designed to offer an immersive and festive user experience. The color palette and design elements are carefully chosen to evoke the warmth and joy of the holiday season, ensuring that users feel the Christmas spirit while interacting with the app.
+
+##### **Color Palette**
+
+I have selected a vibrant and harmonious color palette that combines traditional Christmas colors with a touch of elegance and winter charm:
+
+    Classic Red (rgba(255, 0, 0, 1)): A vibrant, warm red that is emblematic of Christmas. Ideal for attention-grabbing elements like buttons, notifications, and progress bars.
+
+    Evergreen Green (rgba(1, 50, 32, 1)): A rich, deep green that reflects the color of Christmas trees. Perfect for background panels and as an accent color in graphics and borders.
+
+    Snowy White (rgba(255, 255, 255, 1)): Crisp and clean, this white brings to mind a serene winter landscape. Used primarily for text and UI elements to ensure readability and a minimalistic, clean aesthetic.
+
+    Gold (rgba(255, 215, 0, 1)): A luxurious and festive gold adds a touch of elegance. It's excellent for highlights, special badges, and to accentuate key information.
+
+    Midnight Blue (rgba(0, 0, 139, 1)): A deep blue reminiscent of a clear winter night's sky, offering a striking contrast to the brighter tones. Suitable for secondary backgrounds and subtle design elements.
+
+##### **Usage of Colors**
+
+* UI Elements: Use Classic Red and Gold for interactive elements like buttons and links to draw attention and guide user interactions.
+* Typography: Default text should be in Snowy White for readability, especially on darker backgrounds like Evergreen Green and Midnight Blue.
+* Backgrounds: Utilize a combination of Evergreen Green and Midnight Blue for different sections to create depth and visual interest.
+* Accents and Highlights: Use Gold sparingly to accentuate important elements and create a festive, premium feel.
+
+##### **Design Principles**
+
+* Simplicity and Clarity: The design should be straightforward, with a focus on user experience and ease of navigation.
+* Consistency: Maintain consistent use of colors and design elements throughout the application to create a cohesive look and feel.
+* Accessibility: Ensure that text contrasts well against backgrounds for readability and consider accessibility guidelines for a broad range of users.
+* Responsiveness: The design should be responsive and adapt well to various screen sizes and devices.
+
+By adhering to these color and design guidelines, an engaging and visually appealing Christmas Quiz experience that captivates our users and spreads holiday cheer will be achieved.
