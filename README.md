@@ -163,3 +163,31 @@ I have selected a vibrant and harmonious colour palette that combines traditiona
 * Responsiveness: The design should be responsive and adapt well to various screen sizes and devices.
 
 By adhering to these color and design guidelines, an engaging and visually appealing Christmas Quiz experience that captivates our users and spreads holiday cheer will be achieved.
+
+- - -
+#### **Fonts**
+For our Christmas Quiz website, we've integrated [Google Fonts](https://fonts.google.com/) to enhance the festive atmosphere through typography. Our selections include [Mountains of Christmas](https://fonts.google.com/specimen/Mountains+of+Christmas) (with a fallback of Sans Serif) for the logo and key headings. This font exudes a cheerful and merry vibe, perfectly aligning with the Christmas theme. It also maintains excellent readability and possesses a playful, yet professional appearance.
+
+Additionally, we have chosen [Open Sans](https://fonts.google.com/specimen/Open+Sans) (with a fallback of Sans Serif) for the main body text. This font complements Mountains of Christmas well, offering a clean and neutral contrast. Open Sans is renowned for its versatility across different weights and is exceptionally legible in digital formats. Its modern and friendly character adds to the welcoming and engaging user experience on our Christmas-themed site.
+
+By employing these fonts, we aim to create a visually delightful and user-friendly interface that resonates with the joy and spirit of the Christmas season.
+- - -
+## Technologies Used
+
+### Languages
+* [HTML](https://en.wikipedia.org/wiki/HTML5)
+* [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+- - -
+### Tools
+* [GitHub](https://github.com/)
+    * Used to store the project code.
+* [Diagrams.net](https://www.drawio.com/)
+    * Used to create wireframes.
+* [Google Fonts](https://fonts.google.com/)
+    * Used to select & import the fonts to the project (Mountains of Christmas and Open Sans)
+* [Font Awesome](https://fontawesome.com/)
+    * Used to add icons to the site.
+* [Chat GPT](https://chat.openai.com/)
+    * Used the create Christmas themed content such as the quiz Q&As.
