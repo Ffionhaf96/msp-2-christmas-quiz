@@ -1,9 +1,12 @@
-html{
-    background-color: #fff;
+html {
+    background-color: var(--evergreen-green);
     color: #000;
     font-family: 'Roboto', sans-serif;
-    font-size: 1ch;
+    font-family: 'Mountains of Christmas', serif;
+    color: var(--snowy-white);
+    text-align: center;
 }
+
 
 :root {
     --classic-red: rgba(255, 0, 0, 1);
@@ -16,8 +19,81 @@ html{
 
 body {
     display: grid;
-    grid-template: "header header header" 1fr
-                   "main main main" 1fr
-                   "footer footer footer" 1fr
-                   / 1fr 1fr 1fr;
+    grid-template-areas:
+        "nav"
+        "header"
+        "timer"
+        "question"
+        "main"
+        "button";
+    grid-template-rows: 50px 0.5fr 0.2fr 0.3fr max-content 0.1fr;
+    grid-template-columns: 1fr;
+    row-gap: 3%;
+    justify-items: center;
+    align-content: center;
+    min-height: 95vh;
+
 }
+
+.time-text {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: var(--classic-red);
+    border-color: var(--snowy-white);
+    border-style: dashed;
+    border-width: 3px;
+    grid-area: header;
+    width: 90%;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#timer {
+    background-color: var(--gold);
+    border-color: var(--snowy-white);
+    border-style: dashed;
+    border-width: 3px;
+    grid-area: timer;
+    width: 70%;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#question {
+    grid-area: question;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+main {
+    border-color: var(--snowy-white);
+    border-style: dashed;
+    border-width: 3px;
+    grid-area: main;
+    grid-column: 1 / 4;
+    width: 70%;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+button {
+    color: var(--snowy-white);
+    background-color: var(--classic-red);
+    border-color: var(--snowy-white);
+    border-style: dashed;
+    border-width: 3px;
+    grid-area: button;
+    width: 70%;
+    font-size: 22px;
+    font-weight: 700;
+    align-self: center;
+}
+/* 
+#button {
+    background-color: var(--classic-red);
+    border-style: none;
+    border-color: none;
+} */
