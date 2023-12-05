@@ -166,7 +166,7 @@ By adhering to these color and design guidelines, an engaging and visually appea
 
 - - -
 #### **Fonts**
-For our Christmas Quiz website, we've integrated [Google Fonts](https://fonts.google.com/) to enhance the festive atmosphere through typography. Our selections include [Mountains of Christmas](https://fonts.google.com/specimen/Mountains+of+Christmas) (with a fallback of Sans Serif) for the logo and key headings. This font exudes a cheerful and merry vibe, perfectly aligning with the Christmas theme. It also maintains excellent readability and possesses a playful, yet professional appearance.
+For our Christmas Quiz website, I've integrated [Google Fonts](https://fonts.google.com/) to enhance the festive atmosphere through typography. Our selections include [Mountains of Christmas](https://fonts.google.com/specimen/Mountains+of+Christmas) (with a fallback of Sans Serif) for the logo and key headings. This font exudes a cheerful and merry vibe, perfectly aligning with the Christmas theme. It also maintains excellent readability and possesses a playful, yet professional appearance.
 
 Additionally, we have chosen [Open Sans](https://fonts.google.com/specimen/Open+Sans) (with a fallback of Sans Serif) for the main body text. This font complements Mountains of Christmas well, offering a clean and neutral contrast. Open Sans is renowned for its versatility across different weights and is exceptionally legible in digital formats. Its modern and friendly character adds to the welcoming and engaging user experience on our Christmas-themed site.
 
