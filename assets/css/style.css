@@ -4,3 +4,20 @@ html{
     font-family: 'Roboto', sans-serif;
     font-size: 1ch;
 }
+
+:root {
+    --classic-red: rgba(255, 0, 0, 1);
+    --evergreen-green: rgba(1, 50, 32, 1);
+    --snowy-white: rgba(255, 255, 255, 1);
+    --gold: rgba(255, 215, 0, 1);
+    --midnight-blue: rgba(0, 0, 139, 1);
+}
+
+
+body {
+    display: grid;
+    grid-template: "header header header" 1fr
+                   "main main main" 1fr
+                   "footer footer footer" 1fr
+                   / 1fr 1fr 1fr;
+}
