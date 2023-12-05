@@ -26,7 +26,7 @@ body {
         "question"
         "main"
         "button";
-    grid-template-rows: 50px 0.5fr 0.2fr 0.3fr max-content 0.1fr;
+    grid-template-rows: 50px 0.3fr 0.2fr 0.2fr max-content 0.1fr;
     grid-template-columns: 1fr;
     row-gap: 3%;
     justify-items: center;
@@ -59,9 +59,12 @@ header {
     width: 70%;
     font-size: 22px;
     font-weight: 700;
+    line-height: 5%;
+    align-self: center;
 }
 
 #question {
+    /* color: var(--classic-red); */
     grid-area: question;
     width: 100%;
     font-size: 22px;
