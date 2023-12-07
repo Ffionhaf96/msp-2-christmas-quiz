@@ -1,3 +1,5 @@
+/* Sitewide styles */
+
 html {
     background-color: var(--evergreen-green);
     color: #000;
@@ -7,7 +9,7 @@ html {
     text-align: center;
 }
 
-
+/* Color variables */
 :root {
     --classic-red: rgba(255, 0, 0, 1);
     --evergreen-green: rgba(1, 50, 32, 1);
@@ -16,7 +18,7 @@ html {
     --midnight-blue: rgba(0, 0, 139, 1);
 }
 
-
+/* Grid template https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas*/
 body {
     display: grid;
     grid-template-areas:
@@ -28,13 +30,17 @@ body {
         "button";
     grid-template-rows: 50px 0.3fr 0.2fr 0.2fr max-content 0.1fr;
     grid-template-columns: 1fr;
+    /* Give everything a little space between rows */
     row-gap: 3%;
+    /* Make everything centered on X and Y axis */
     justify-items: center;
     align-content: center;
+    /* Take up almost all the page height no matter what the content */
     min-height: 95vh;
 
 }
 
+/* Make timer look more digital clock styled */
 .time-text {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -42,8 +48,10 @@ body {
 header {
     background-color: var(--classic-red);
     border-color: var(--snowy-white);
+    /* Candy cane style border with dashed property */
     border-style: dashed;
     border-width: 3px;
+    /* Apply header to correct area in Grid layout */
     grid-area: header;
     width: 90%;
     font-size: 22px;
@@ -55,16 +63,19 @@ header {
     border-color: var(--snowy-white);
     border-style: dashed;
     border-width: 3px;
+    /* Apply timer to correct area in Grid layout */
     grid-area: timer;
     width: 70%;
     font-size: 22px;
     font-weight: 700;
+    /* Paragraphs were too far apart when using multiple paragraphs https://developer.mozilla.org/en-US/docs/Web/CSS/line-height*/
     line-height: 5%;
     align-self: center;
 }
 
 #question {
     /* color: var(--classic-red); */
+    /* Apply question to correct area in Grid layout */
     grid-area: question;
     width: 100%;
     font-size: 22px;
@@ -90,13 +101,9 @@ button {
     border-width: 3px;
     grid-area: button;
     width: 70%;
+    /* Specify font again because it wasn't cascading */
+    font-family: 'Mountains of Christmas', serif;
     font-size: 22px;
     font-weight: 700;
     align-self: center;
 }
-/* 
-#button {
-    background-color: var(--classic-red);
-    border-style: none;
-    border-color: none;
-} */
