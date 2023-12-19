@@ -9,7 +9,18 @@ This is the documentation for my web application: The Christmas Quiz. It has bee
 
 - - -
 ## Table of Contents
-
+1. [Project Development & Planning](#project-development--planning)
+    * [Project Goals](#project-goals)
+    * [Research](#research)
+    * [User Stories](#user-stories)
+    * [Content](#content)
+    * [Design, Layout & Structure](#design-layout--structure)
+2. [Technologies Used](#technologies-used)
+3. [Features](#features)
+4. [JavaScript Functionality](#javascript-functionality)
+5. [Testing & Bugs](#testing--bugs)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
 - - -
 ## Project Development & Planning
 The development of "The Christmas Quiz" was a meticulous process guided by the principles of UX design, including the 5 planes of Strategy, Scope, Structure, Skeleton & Surface. Each stage was carefully executed to create an application that is not only engaging and fun but also intuitive and accessible, fulfilling the needs and expectations of both users and clients.
@@ -207,3 +218,13 @@ By employing these fonts, we aim to create a visually delightful and user-friend
 </details>
 
 For "The Christmas Quiz", a unique favicon was created to reflect the festive theme of the website. The favicon represents a small, stylized festive ornament, instantly recognizable and tying in with the overall holiday theme. This small but crucial detail ensures brand consistency across browser tabs, bookmarks, and history, enhancing user recognition and the overall aesthetic appeal of the quiz website.
+
+
+## Bugs and Fixes
+
+- Bug 1 - Storing Array objects directly in localStorage did not work
+    - Fix - [Use `JSON.parse()` and `JSON.stringify()` to store an Array as a string](https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage)
+
+- Bug 2 - `chosenAnswers` key needed click event triggered twice to move onto next question
+    - Fix - Originally incrementing values with postfix (`index++`) operation which returned value of index and then incremented. Changing to a prefix (`++index`) operation incremented and then returned the value which was intended behaviour.
+
