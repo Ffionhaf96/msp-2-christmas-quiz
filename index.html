@@ -7,6 +7,10 @@
     <meta name="description" content="Christmas Quiz">
     <meta name="keywords" content="Christmas Quiz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- Import Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Import Christmas fonts from google fonts -->
@@ -19,26 +23,35 @@
 <body>
     <header>
         <h1>Christmas Quiz</h1>
-        <h2>Round 2 / 10</h2>
+        <h2>2023</h2>
     </header>
     <section id="timer">
-        <p>Time left</p>
-        <p class="time-text">10.00</p>
+        <p>Are you ready to take on the Christmas Quiz?!</p>
     </section>
     <section id="question">
-        <p></p>
+        <label for="name">Choose your name (4 to 8 characters long)</label>
+        <br>
+        <input type="text" id="name" name="nickname" required minlength="4" maxlength="8"/>
+        <p class="saved-name"></p>
+        <button type="button" class="save-name">Save my nickname</button>
     </section>
     <main>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
+        <div class="avatar-selector">
+            <ul>
+                <li><img src="./assets/favicons/favicon-32x32.png"></li>
+                <li><img src="./assets/favicons/favicon-32x32.png"></li>
+                <li><img src="./assets/favicons/favicon-32x32.png"></li>
+                <li><img src="./assets/favicons/favicon-32x32.png"></li>
+                <li><img src="./assets/favicons/favicon-32x32.png"></li>
+            </ul>
+        </div>
+        <div class="photo-taker">
+            <!-- TODO: Capture selfie photo using https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API/Taking_still_photos#demo-->
+            <button>Take a Selfie</button>
+        </div>
     </main>
-    <button type="button">Final Answer!</button>
-    <script src="assets/js/logic.js"></script>
+    <a href="./game.html" class="button start-game">Lets get started!</a>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
