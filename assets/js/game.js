@@ -1,7 +1,7 @@
 // TODOs
 
 // 1. [X] Create a function that will start the quiz
-// 2. [] Create a function that will end the quiz
+// 2. [X] Create a function that will end the quiz
 // 3. [] Create a function that will check the answers
 // 4. [] Create a function that will display the results
 // 5. [X] Create a function that will display the questions
@@ -132,7 +132,7 @@ if (savedIndex !== null && listItems[savedIndex]) {
     listItems[savedIndex].classList.add('selected');
 }
 
-function handleSubmitAnswer() {
+function handleSubmitAnswer(event) {
     // get answer array from localStorage if it exists otherwise make a new one 
     // using nullish coalescing operator https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing
     let answers = JSON.parse(localStorage.getItem('chosenAnswers')) ?? Array();
@@ -140,7 +140,8 @@ function handleSubmitAnswer() {
     
     const currentSelectedAnswerIndex = localStorage.getItem('selectedListItem');
     if (answers.length <= index){
-        answers.push(currentSelectedAnswerIndex);
+        const answerValue = Array.from(listItems)[currentSelectedAnswerIndex].textContent;
+        answers.push(answerValue);
         localStorage.setItem('chosenAnswers', JSON.stringify(answers))
     }
 
