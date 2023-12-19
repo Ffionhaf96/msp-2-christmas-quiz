@@ -232,6 +232,7 @@ details><summary>Details</summary>
 * Pressing the start game button starts the main JavaScript function which contains all the game's functionality.
 
 </details>
+
 ## Bugs and Fixes
 
 - Bug 1 - Storing Array objects directly in localStorage did not work
@@ -240,3 +241,38 @@ details><summary>Details</summary>
 - Bug 2 - `chosenAnswers` key needed click event triggered twice to move onto next question
     - Fix - Originally incrementing values with postfix (`index++`) operation which returned value of index and then incremented. Changing to a prefix (`++index`) operation incremented and then returned the value which was intended behaviour.
 
+## Deployment
+
+### GitHub Pages
+
+The website was launched on GitHub Pages using these steps:
+
+1. Go to the 'Settings' tab in your GitHub repository.
+2. Choose 'Pages' from the menu on the left.
+3. In the source section, select 'Branch: main'.
+4. Press 'Save'.
+5. A link to the live website will be shown upon successful publication.
+
+The live website can be accessed [here](<insert deployment link >)
+
+<!-- TODO: Add the actual deployment link here later -->
+
+### Forking the GitHub Repository
+
+To create a personal copy of the repository on your GitHub account, follow these instructions:
+
+1. Visit the GitHub repository page.
+2. Click the 'Fork' button located in the upper right corner of the page.
+
+### Cloning the GitHub Repository
+
+To clone the repository for local use, complete the following steps:
+
+1. Go to the GitHub Repository that you wish to clone.
+2. Click on the 'Code' button to open a dropdown menu.
+3. Select 'HTTPS'.
+4. Copy the URL provided.
+5. Open your preferred Integrated Development Environment (IDE) where Git is already installed.
+6. In the terminal of your IDE, enter `git clone [paste-copied-git-url-here]`.
+
+This process will clone the project to your local machine for development purposes.
