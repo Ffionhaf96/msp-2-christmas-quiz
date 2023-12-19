@@ -219,7 +219,19 @@ By employing these fonts, we aim to create a visually delightful and user-friend
 
 For "The Christmas Quiz", a unique favicon was created to reflect the festive theme of the website. The favicon represents a small, stylized festive ornament, instantly recognizable and tying in with the overall holiday theme. This small but crucial detail ensures brand consistency across browser tabs, bookmarks, and history, enhancing user recognition and the overall aesthetic appeal of the quiz website.
 
+## JavaScript Functionality
+This section provides a straightforward, non-technical explanation of the processes occurring in the JavaScript code as the user progresses through the game. This is meant to complement, not replace, the comments already present in the JavaScript code.
 
+### Welcome Section
+
+details><summary>Details</summary>
+* User enters their nickname and clicks the 'Let's Get Started' button.
+    * In cases where the name field is left empty, a warning pops up asking the user to input a name.
+    * The entered name is saved for later use on the results page.
+* Users have the option to select an avatar that will represent them during the game.
+* Pressing the start game button starts the main JavaScript function which contains all the game's functionality.
+
+</details>
 ## Bugs and Fixes
 
 - Bug 1 - Storing Array objects directly in localStorage did not work
