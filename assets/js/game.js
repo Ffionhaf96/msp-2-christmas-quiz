@@ -74,10 +74,13 @@ async function showQuestion(index) {
             item.textContent = choices[index];
         }
     });
+    // start a brand new timer for fresh question
+    startTimer();
 }
 
 
 async function startTimer() {
+
     //get the timer text element
     const timerElement = document.querySelector('#timer .time-text');
     // 10 seconds in ms
@@ -96,6 +99,9 @@ async function startTimer() {
         // stop the time
         if (startTime <= 0) {
             clearInterval(interval);
+            // Player has ran out of time
+            // Pick the last selected item in the list and move player to next question
+            // handleSubmitAnswer();
         }
         // Update every 10 milliseconds
     }, 10);
@@ -145,9 +151,7 @@ function handleSubmitAnswer() {
 
     showQuestion(nextQuestion);
 
-    // start a brand new timer for fresh question
-    // TODO: Timer keeps going from previous question if it doesn't hit 0
-    startTimer();
+    
 }
 
 const submitAnswer = document.querySelector('.submit-answer');
@@ -161,6 +165,5 @@ console.debug("app start")
 let index = localStorage.getItem('currentQuestion') ?? 0;
 showQuestion(index)
 
-startTimer();
 
 // Path: msp-2-christmas-quiz/assets/js/script.js
