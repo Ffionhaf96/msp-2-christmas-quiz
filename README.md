@@ -295,3 +295,5 @@ This process will clone the project to your local machine for development purpos
 
 
 #### **Photos**
+
+## Acknowledgements
