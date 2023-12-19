@@ -19,6 +19,7 @@ function restartQuiz() {
     localStorage.clear();
     window.location.href="index.html"
 }
+
 const restartQuizButton = document.querySelector('#restart');
 //add event listener to restart button
 restartQuizButton.addEventListener('click', restartQuiz)
@@ -42,13 +43,16 @@ async function getQuiz() {
 
 async function showQuestion(index) {
     const data = await getQuiz();
-    // TODO: iterate over all the questions
-    //get the question matching the index
+    
     const question = data.questions[index];
+
+    // if no more questions in JSON move on to results page
     if (!question) {
         console.error("We ran out of questions. Quiz ended.")
-        return false;
+        return window.location.href = 'results.html';
     }
+    const levelNumber = document.querySelector('.level-number');
+    levelNumber.textContent = `Round ${index+1} / 5`;
     index++;
     const choices = question.choices;
     console.debug(question);
