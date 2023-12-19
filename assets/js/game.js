@@ -101,7 +101,7 @@ async function startTimer() {
             clearInterval(interval);
             // Player has ran out of time
             // Pick the last selected item in the list and move player to next question
-            // handleSubmitAnswer();
+            handleSubmitAnswer();
         }
         // Update every 10 milliseconds
     }, 10);
