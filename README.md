@@ -276,3 +276,22 @@ To clone the repository for local use, complete the following steps:
 6. In the terminal of your IDE, enter `git clone [paste-copied-git-url-here]`.
 
 This process will clone the project to your local machine for development purposes.
+
+## Credits
+
+### Code
+
+* 
+
+- - -
+### Text Content
+
+* [ChatGPT](https://chat.openai.com/): Provided the questions and answered used within this quiz.
+
+- - -
+### Media
+
+* Background Cloud Image [Image by rawpixel.com on Freepik](https://www.freepik.com/free-vector/cloud-background-pastel-paper-cut-style-vector_18220838.htm#&position=8&from_view=collections)
+
+
+#### **Photos**
