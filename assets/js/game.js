@@ -132,7 +132,7 @@ if (savedIndex !== null && listItems[savedIndex]) {
     listItems[savedIndex].classList.add('selected');
 }
 
-function handleSubmitAnswer(event) {
+function handleSubmitAnswer() {
     // get answer array from localStorage if it exists otherwise make a new one 
     // using nullish coalescing operator https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing
     let answers = JSON.parse(localStorage.getItem('chosenAnswers')) ?? Array();
