@@ -241,6 +241,12 @@ details><summary>Details</summary>
 - Bug 2 - `chosenAnswers` key needed click event triggered twice to move onto next question
     - Fix - Originally incrementing values with postfix (`index++`) operation which returned value of index and then incremented. Changing to a prefix (`++index`) operation incremented and then returned the value which was intended behaviour.
 
+- Bug 3 - Quiz countdown timer using `setInterval` was not restarting for each new question.
+    - Fix: `startTimer()` was being started in two places instead of just one. Changed to start in only one.
+    __see__: use `git --no-pager diff c1b48936f188e9c6e8c033edb6d53111fe63f2dc 1759283cac75f9a47233ffbe7f190dc8fde9814b -- game.js` to see the exact fix.
+
+- Bug 4 - 
+
 ## Deployment
 
 ### GitHub Pages
