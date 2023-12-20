@@ -18,7 +18,7 @@ html {
     --midnight-blue: rgba(0, 0, 139, 1);
 }
 
-/* Grid template https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas*/
+/* Grid template https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
 body {
     display: grid;
     grid-template-areas:
@@ -28,7 +28,7 @@ body {
         "question"
         "main"
         "button";
-    grid-template-rows: 50px 0.3fr 0.2fr 0.2fr max-content 0.1fr;
+    grid-template-rows: 30px 0.1fr 0.2fr 0.2fr max-content 0.1fr;
     grid-template-columns: 1fr;
     /* Give everything a little space between rows */
     row-gap: 3%;
