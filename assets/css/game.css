@@ -1,0 +1,21 @@
+/* Grid template https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas*/
+body {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "header"
+        "timer"
+        "question"
+        "main"
+        "button";
+    grid-template-rows: 50px 0.3fr 0.2fr 0.2fr max-content 0.1fr;
+    grid-template-columns: 1fr;
+    /* Give everything a little space between rows */
+    row-gap: 3%;
+    /* Make everything centered on X and Y axis */
+    justify-items: center;
+    align-content: center;
+    /* Take up almost all the page height no matter what the content */
+    min-height: 95vh;
+
+}
