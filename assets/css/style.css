@@ -40,6 +40,10 @@ body {
 
 }
 
+#timer {
+    color: var(--evergreen-green);
+}
+
 /* Make timer look more digital clock styled */
 .time-text {
     font-family: 'Courier New', Courier, monospace;
@@ -68,8 +72,6 @@ header {
     width: auto;
     font-size: 22px;
     font-weight: 700;
-    /* Paragraphs were too far apart when using multiple paragraphs https://developer.mozilla.org/en-US/docs/Web/CSS/line-height*/
-    line-height: 5%;
     align-self: center;
 }
 
@@ -110,4 +112,17 @@ main {
 
 .selected {
     color: var(--classic-red);
+}
+
+
+.avatar-selector{
+    font-size: 3ch;
+    list-style-type: circle;
+}
+.selected-avatar {
+    background-color: rgba(255,255,255,0.3);
+}
+.chosen-avatar {
+    line-height: 0%;
+    font-size: 3ch;
 }
