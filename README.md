@@ -234,8 +234,7 @@ details><summary>Details</summary>
 </details>
 
 ## Bugs and Fixes
-
-
+[See TESTING.md for full breakdown of testing & bugs](TESTING.md)
 
 ## Deployment
 
@@ -287,9 +286,10 @@ This process will clone the project to your local machine for development purpos
 - - -
 ### Media
 
-* Background Cloud Image [Image by rawpixel.com on Freepik](https://www.freepik.com/free-vector/cloud-background-pastel-paper-cut-style-vector_18220838.htm#&position=8&from_view=collections)
-
-
 #### **Photos**
+* [Favicon Image]()
+* [Avatar Images]()
 
 ## Acknowledgements
+- My mentor [Daisy McGirr](https://github.com/Dee-McG) for all her help and advice throughout the project.
+- The whole team at [Code Institute](https://codeinstitute.net/) for their teaching and support.
