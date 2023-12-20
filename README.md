@@ -8,6 +8,7 @@
 This is the documentation for my web application: The Christmas Quiz. It has been built using HTML5, CSS3 & JavaScript for educational purposes as part of Code Institute’s Diploma in Web Application Development Course.
 
 - - -
+
 ## Table of Contents
 1. [Project Development & Planning](#project-development--planning)
     * [Project Goals](#project-goals)
@@ -71,11 +72,11 @@ The online festive quiz market is diverse and engaging, catering to a wide range
 ### User Stories
 In light of the research and defined goals for "The Christmas Quiz," I crafted a set of user stories to guide the development process. Considering the nature of the quiz, it's anticipated that users will engage with it mainly during the festive season.The focus is on providing a delightful first-time experience, with the understanding that some users may revisit for fun or to share with friends and family. The user stories are oriented towards a user engaging with the quiz for the first time or as part of a seasonal activity.
 
-User Story 1) **Discover Festive Knowledge:** I want to participate in an enjoyable online quiz to learn about Christmas traditions, history, and fun facts from around the world.
-User Story 2) **Engaging Visual Content:** I want to see festive-themed images and graphics that enhance my quiz experience and bring the Christmas spirit to life.
-User Story 3) **Understanding Quiz Results:** I want to see a summary of my quiz results to gain insights into what my answers reveal about my knowledge and preferences regarding Christmas.
-User Story 4) **Multi-Device Accessibility:** I want to access the quiz on any device, whether it's my desktop, tablet, or smartphone, ensuring a seamless experience.
-User Story 5) **Ease of Navigation:** I want to navigate the site easily, finding my way through the quiz and any additional festive content without any confusion or difficulty.
+- User Story 1) **Discover Festive Knowledge:** I want to participate in an enjoyable online quiz to learn about Christmas traditions, history, and fun facts from around the world.
+- User Story 2) **Engaging Visual Content:** I want to see festive-themed images and graphics that enhance my quiz experience and bring the Christmas spirit to life.
+- User Story 3) **Understanding Quiz Results:** I want to see a summary of my quiz results to gain insights into what my answers reveal about my knowledge and preferences regarding Christmas.
+- User Story 4) **Multi-Device Accessibility:** I want to access the quiz on any device, whether it's my desktop, tablet, or smartphone, ensuring a seamless experience.
+- User Story 5) **Ease of Navigation:** I want to navigate the site easily, finding my way through the quiz and any additional festive content without any confusion or difficulty.
 
 - - -
 ### Content
