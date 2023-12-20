@@ -121,6 +121,7 @@ function handleListItemClick(event) {
     const clickedIndex = Array.from(listItems).indexOf(event.target);
     localStorage.setItem('selectedListItem', clickedIndex);
 };
+
 // Add event listeners to each list item
 listItems.forEach((li, index) => {
     li.addEventListener('click', handleListItemClick);
@@ -133,7 +134,8 @@ if (savedIndex !== null && listItems[savedIndex]) {
 }
 
 function handleSubmitAnswer() {
-    // get answer array from localStorage if it exists otherwise make a new one 
+    // get answer array from localStorage if it exists otherwise make a new one
+    // using JSON.parse because we can only store simple strings in localStorage
     // using nullish coalescing operator https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing
     let answers = JSON.parse(localStorage.getItem('chosenAnswers')) ?? Array();
 
