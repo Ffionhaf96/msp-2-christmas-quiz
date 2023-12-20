@@ -239,7 +239,91 @@ I conducted tests on the site in alignment with my defined user stories:
 | No. | User Goal                   | How is it achieved?                                        |
 |-----|-----------------------------|------------------------------------------------------------|
 | 1   | Discover Festive Knowledge  | Participate in an online quiz to learn about Christmas traditions, history, and fun facts. |
-| 2   | Engaging Visual Content     | View festive-themed images and graphics throughout the quiz. |
+| 2   | Engaging Visual Content     | View festive-themed images and graphics and colours throughout the quiz. |
 | 3   | Understanding Quiz Results  | See a summary of quiz results to understand Christmas knowledge and preferences. |
 | 4   | Multi-Device Accessibility  | Access the quiz on any device, ensuring a seamless experience. |
 | 5   | Ease of Navigation          | Navigate the site easily, with a user-friendly interface for the quiz and additional content. |
+
+
+**Screen Recordings/ Screenshots of User Stories**
+
+<details><summary>User Story 1: Discover Festive Knowledge</summary>
+<img src="">
+</details>
+
+<details><summary>User Story 2: Engaging Visual Content</summary>
+<img src="">
+</details>
+
+<details><summary>User Story 3: Understanding Quiz Results</summary>
+<img src="">
+</details>
+
+<details><summary>User Story 4: Multi-Device Accessibility</summary>
+<img src="">
+</details>
+
+<details><summary>User Story 5:  Ease of Navigation</summary>
+<img src="">
+
+</details>
+- - -
+
+### Feature Testing
+
+#### **Responsiveness / Device Testing**
+
+The site was tested on the following devices:
+
+<!--> Insert which devices it was tested on <-->
+
+**Bugs found - specific to device testing:**
+
+<!--> Insert bug information here <-->
+
+- - -
+#### **Browser Compatibility**
+
+The site was tested on the following browsers.
+* Google Chrome
+* Mozilla Firefox
+
+**Bugs found - specific to browser testing:**
+
+<!--> Insert bug information here <-->
+
+- - -
+
+### Feature Testing Results Table
+
+
+<!--> Insert feature testing information here <-->
+
+- - -
+## Bugs & Fixes
+
+Throughout the development and testing phases, besides the enhancements mentioned in the validation section above, I came across the following bugs:
+
+- Bug 1 - Storing Array objects directly in localStorage did not work
+    - Fix - [Use `JSON.parse()` and `JSON.stringify()` to store an Array as a string](https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage)
+
+- Bug 2 - `chosenAnswers` key needed click event triggered twice to move onto next question
+    - Fix - Originally incrementing values with postfix (`index++`) operation which returned value of index and then incremented. Changing to a prefix (`++index`) operation incremented and then returned the value which was intended behaviour.
+
+- Bug 3 - Quiz countdown timer using `setInterval` was not restarting for each new question.
+    - Fix: `startTimer()` was being started in two places instead of just one. Changed to start in only one.
+    __see__: use `git --no-pager diff c1b48936f188e9c6e8c033edb6d53111fe63f2dc 1759283cac75f9a47233ffbe7f190dc8fde9814b -- game.js` to see the exact fix.
+
+- Bug 4 - 
+
+
+- - -
+### Known & Remaining Bugs
+The details about any remaining bugs are provided in the information above. For more detail, click on the links below:
+
+<!-->insert detail of any unresolved bugs <-->
+
+- - -
+- - -
+
+[Go to README](README.md)
