@@ -16,7 +16,6 @@ const saveName = document.querySelector('.save-name');
 saveName.addEventListener('click', handleSaveName);
 
 function handleHouseRules(showModal) {
-    console.log();
     // get all child elements of body
     const childrenList = document.querySelector('body').children;
     // turn HTMLCollection into an iterable type Array 👉🏻 https://stackoverflow.com/questions/222841/most-efficient-way-to-convert-an-htmlcollection-to-an-array
@@ -36,11 +35,13 @@ function handleHouseRules(showModal) {
 
 // listen for click event on house-rules
 const houseRules = document.querySelector('.house-rules');
-houseRules.addEventListener('click', handleHouseRules(true));
+// use bind to pass argument to function without instantly calling it https://stackoverflow.com/a/23024673 
+houseRules.addEventListener('click', handleHouseRules.bind(null, true));
 
 // // listen for click event on house-rules-accepted
 const houseRulesAccepted = document.querySelector('.house-rules-accepted');
-houseRulesAccepted.addEventListener('click', handleHouseRules(false));
+// use bind to pass argument to function without instantly calling it https://stackoverflow.com/a/23024673 
+houseRulesAccepted.addEventListener('click', handleHouseRules.bind(null, false));
 
 const avatarItems = document.querySelectorAll('.avatar-selector ul li');
 console.log(avatarItems);
