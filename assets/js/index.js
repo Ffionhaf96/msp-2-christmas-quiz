@@ -1,10 +1,15 @@
 
 // handle saving 
 function handleSaveName() {
-    const inputName = document.querySelector('#name').value;
-    localStorage.setItem('nickname', inputName);
-    const savedName = document.querySelector('.saved-name');
-    savedName.textContent = `Current Name: ${inputName}`;
+    const inputName = document.querySelector('#name').value.trim();
+    if (inputName) {
+        document.querySelector('.message').textContent = "";
+        const savedName = document.querySelector('.saved-name');
+        savedName.textContent = `Current Name: ${inputName}`;
+        localStorage.setItem('nickname', inputName);
+    } else {
+        document.querySelector('.message').textContent = "Nickname can't just be whitespace!";
+    }
 }
 // listen for click event on save-name
 const saveName = document.querySelector('.save-name');
@@ -41,7 +46,7 @@ function checkSelectionsMade() {
     const avatar = localStorage.getItem('avatar');
     if (nickname && avatar) {
         window.location.href = "game.html";
-    }else{
-        document.querySelector('.message').textContent = "You must select a nickname and avatar!"
+    } else {
+        document.querySelector('.message').textContent = "You must select a nickname and avatar!";
     }
 }
