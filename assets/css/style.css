@@ -9,13 +9,14 @@ html {
     text-align: center;
 }
 
-/* Color variables */
+/* Color variables and Standard Units*/
 :root {
     --classic-red: rgba(255, 0, 0, 1);
     --evergreen-green: rgba(1, 50, 32, 1);
     --snowy-white: rgba(255, 255, 255, 1);
     --gold: rgba(255, 215, 0, 1);
     --midnight-blue: rgba(0, 0, 139, 1);
+    --component-width: 80%;
 }
 
 /* Grid template https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
@@ -61,7 +62,7 @@ header {
     border-width: 3px;
     /* Apply header to correct area in Grid layout */
     grid-area: header;
-    width: 90%;
+    width: var(--component-width);
     font-size: 22px;
     font-weight: 700;
 }
@@ -74,7 +75,7 @@ header {
     padding-bottom: 10px;
     /* Apply timer to correct area in Grid layout */
     grid-area: timer;
-    width: auto;
+    width: var(--component-width);
     font-size: 22px;
     font-weight: 700;
     align-self: center;
@@ -107,15 +108,23 @@ header {
 #house-rules-modal ul {
     font-family: 'Courier New', Courier, monospace;
     font-size: 22px;
+    width: var(--component-width);
 }
 
 #question {
     /* color: var(--classic-red); */
     /* Apply question to correct area in Grid layout */
     grid-area: question;
-    width: 100%;
+    border-color: var(--snowy-white);
+    border-style: dashed;
+    border-width: 3px;
+    width: 80%;
     font-size: 22px;
     font-weight: 700;
+}
+
+#name {
+    width: var(--component-width);
 }
 
 main {
@@ -123,7 +132,7 @@ main {
     border-style: dashed;
     border-width: 3px;
     grid-area: main;
-    width: 70%;
+    width: var(--component-width);
     font-size: 22px;
     font-weight: 700;
 }
@@ -135,7 +144,7 @@ button {
     border-style: dashed;
     border-width: 3px;
     grid-area: button;
-    width: 70%;
+    width: var(--component-width);
     /* Specify font again because it wasn't cascading */
     font-family: 'Mountains of Christmas', serif;
     font-size: 22px;
