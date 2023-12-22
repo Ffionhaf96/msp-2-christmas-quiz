@@ -55,5 +55,40 @@
       ],
       "answer": "Jingle Bells"
     }
+  ],
+  "resultCategories": [
+    {
+      "title": "Grinch Alert",
+      "description": "It seems you're starting from a Scrooge-like perspective with a 0% score! But remember, even the Grinch found his Christmas spirit eventually.",
+      "suggestion": " Begin your transformation into a festive fan by watching 'How the Grinch Stole Christmas!' or reading up on the holiday's most heartwarming stories. There's a whole world of Christmas joy to discover, and it's never too late to start!",
+      "image": "grinch.webp"
+    },
+    {
+      "title": "Festive Beginner",
+      "description": "You're at the start of your festive journey with a basic understanding of yuletide joy. There's so much more to explore and enjoy.",
+      "suggestion": "Why not try baking some traditional Christmas cookies? It's a fun, delicious way to learn about festive foods and customs.",
+      "image": "cookie.webp"
+    },
+    {
+      "title": "Holiday Explorer",
+      "description": "With a score of 40% or under, you're getting into the swing of things. You have a good understanding of some Christmas cheer but are ready to unwrap even more. ",
+      "suggestion": "Attend a local Christmas market or festival to immerse yourself in the season's traditions and pick up some holiday trivia.",
+      "image": "christmas.webp"
+    },{
+      "title": "Seasoned Celebrator",
+      "description": "Scoring 60% or under shows that you have a hearty dose of Christmas knowledge and spirit. You're well on your way to becoming a festive aficionado. ",
+      "suggestion": "Host a Christmas carol karaoke night with friends or family to test your knowledge of Christmas music and spread the cheer.",
+      "image": "family.webp"
+    },{
+      "title": "Festive Enthusiast",
+      "description": "You're nearly at the top of the nice list with a score of 80% or under! Your Christmas spirit is shining bright.",
+      "suggestion": "Volunteer for a holiday community event or organize a festive fundraiser. Sharing the joy of the season is a great way to celebrate your high score.",
+      "image": "tree-ornament.webp"
+    },{
+      "title": "Christmas Champion",
+      "description": "Congratulations, you could out-Christmas Santa himself with a perfect 100%! Your knowledge and love for the holiday are truly unparalleled.",
+      "suggestion": "Share your love for the season by teaching others. Perhaps you could lead a workshop on Christmas history or write a blog sharing your favorite festive facts and stories. Your enthusiasm is contagious, so spread it far and wide!",
+      "image": "santa.webp"
+    }
   ]
 }
