@@ -15,7 +15,32 @@ function handleSaveName() {
 const saveName = document.querySelector('.save-name');
 saveName.addEventListener('click', handleSaveName);
 
+function handleHouseRules(showModal) {
+    console.log();
+    // get all child elements of body
+    const childrenList = document.querySelector('body').children;
+    // turn HTMLCollection into an iterable type Array 👉🏻 https://stackoverflow.com/questions/222841/most-efficient-way-to-convert-an-htmlcollection-to-an-array
+    Array.from(childrenList).forEach((elem, index) => {
+        if (elem.id == 'house-rules-modal'){
+            return;
+        }
+        // blur the elements and disable selection and pointer events with CSS.
+        elem.classList.toggle("blur-10");
+        elem.classList.toggle("disable");
+    });
+    // get the modal element
+    const modal = document.querySelector('#house-rules-modal');
+    // make the modal appear
+    modal.style["display"] = showModal ? "block" : "none";
+}
 
+// listen for click event on house-rules
+const houseRules = document.querySelector('.house-rules');
+houseRules.addEventListener('click', handleHouseRules(true));
+
+// // listen for click event on house-rules-accepted
+const houseRulesAccepted = document.querySelector('.house-rules-accepted');
+houseRulesAccepted.addEventListener('click', handleHouseRules(false));
 
 const avatarItems = document.querySelectorAll('.avatar-selector ul li');
 console.log(avatarItems);
@@ -44,6 +69,7 @@ startGame.addEventListener('click', checkSelectionsMade)
 function checkSelectionsMade() {
     const nickname = localStorage.getItem('nickname');
     const avatar = localStorage.getItem('avatar');
+    // if we've got both nickname and avatar strings saved in localStorage we're GTG
     if (nickname && avatar) {
         window.location.href = "game.html";
     } else {

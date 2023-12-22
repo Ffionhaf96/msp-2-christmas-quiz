@@ -28,11 +28,27 @@
     </header>
     <section id="timer">
         <p>Are you ready to take on the Christmas Quiz?!</p>
+        <button class="house-rules">House Rules</button>
+    </section>
+    <section id="house-rules-modal">
+        <p>House Rules</p>
+        <ul>
+            <li>
+                Don't Google the Answers (just don't)
+            </li>
+            <li>
+                Tap into the most christmasy corners of your brain
+            </li>
+            <li>
+                You must take this seriously... as serious as Santa is about delivering presents.
+            </li>
+        </ul>
+        <button class="house-rules-accepted">Got it!</button>
     </section>
     <section id="question">
-        <label for="name">Choose your name (4 to 8 characters long)</label>
+        <label for="name">Choose your name (4 to 12 characters long)</label>
         <br>
-        <input type="text" id="name" name="nickname" required minlength="4" maxlength="8"/>
+        <input type="text" id="name" name="nickname" required minlength="4" maxlength="12"/>
         <p class="saved-name"></p>
         <button type="button" class="save-name">Save my nickname</button>
         <p class="message selected"></p>
@@ -49,12 +65,8 @@
                 <li>🦌</li>
             </ul>
         </div>
-        <!-- <div class="photo-taker">
-            TODO: Capture selfie photo using https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API/Taking_still_photos#demo
-            <button>Take a Selfie</button>
-        </div> -->
     </main>
-    <button class="button start-game">Lets get started!</a>
+    <button class="start-game">Lets get started!</a>
     <script src="assets/js/index.js"></script>
 </body>
 

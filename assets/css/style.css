@@ -28,7 +28,7 @@ body {
         "question"
         "main"
         "button";
-    grid-template-rows: 30px 0.1fr 0.2fr 0.2fr max-content 0.1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.2fr 0.2fr max-content 0.1fr;
     grid-template-columns: 1fr;
     /* Give everything a little space between rows */
     row-gap: 3%;
@@ -49,6 +49,10 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+nav {
+    width: 90%;
+}
+
 header {
     background-color: var(--classic-red);
     border-color: var(--snowy-white);
@@ -67,12 +71,42 @@ header {
     border-color: var(--snowy-white);
     border-style: dashed;
     border-width: 3px;
+    padding-bottom: 10px;
     /* Apply timer to correct area in Grid layout */
     grid-area: timer;
     width: auto;
     font-size: 22px;
     font-weight: 700;
     align-self: center;
+}
+
+.blur-10 {
+    filter: blur(10px);
+}
+
+.disable {
+    /* https://stackoverflow.com/questions/16805684/javascript-disable-text-select */
+    user-select: none;
+    /* https://stackoverflow.com/questions/40147856/disable-click-event-on-all-controls-using-javascript */
+    pointer-events: none;
+}
+
+#house-rules-modal {
+    background-color: var(--midnight-blue);
+    border: var(--snowy-white) dashed 3px;
+    z-index: 2;
+    display: none;
+    width: 90%;
+    grid-area: timer / 1 / question / 1;
+    align-self: center;
+    justify-self: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+#house-rules-modal ul {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
 }
 
 #question {
@@ -89,13 +123,12 @@ main {
     border-style: dashed;
     border-width: 3px;
     grid-area: main;
-    grid-column: 1 / 4;
     width: 70%;
     font-size: 22px;
     font-weight: 700;
 }
 
-.button, button {
+button {
     color: var(--snowy-white);
     background-color: var(--classic-red);
     border-color: var(--snowy-white);
@@ -113,16 +146,22 @@ main {
 .selected {
     color: var(--classic-red);
 }
-
-
-.avatar-selector{
+.avatar-selector > ul{
     font-size: 3ch;
-    list-style-type: circle;
+    list-style: none;
+    /* https://stackoverflow.com/questions/9620594/removing-ul-indentation-with-css */
+    padding-left: 0;
 }
 .selected-avatar {
     background-color: rgba(255,255,255,0.3);
 }
 .chosen-avatar {
     line-height: 0%;
-    font-size: 3ch;
+    font-size: 5ch;
+}
+
+.category-image {
+    height: 20vh;
+    width: auto;
+    border-style: dashed;
 }
