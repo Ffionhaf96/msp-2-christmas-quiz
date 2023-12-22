@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Christmas Quiz</title>
@@ -22,16 +22,16 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <h1>Christmas Quiz</h1>
         <h2>2023</h2>
     </header>
-    <section id="timer">
-        <p>Are you ready to take on the Christmas Quiz?!</p>
-        <button class="house-rules">House Rules</button>
+    <section id="timer" aria-labelledby="quiz-intro">
+        <p id="quiz-intro">Are you ready to take on the Christmas Quiz?!</p>
+        <button class="house-rules" aria-controls="house-rules-modal" aria-expanded="false">House Rules</button>
     </section>
-    <section id="house-rules-modal">
-        <p>House Rules</p>
+    <section id="house-rules-modal" role="dialog" aria-labelledby="house-rules-title" aria-hidden="true">
+        <p id="house-rules-title">House Rules</p>
         <ul>
             <li>
                 Don't Google the Answers (just don't)
@@ -45,29 +45,30 @@
         </ul>
         <button class="house-rules-accepted">Got it!</button>
     </section>
-    <section id="question">
-        <label for="name">Choose your name (4 to 12 characters long)</label>
+    <section id="question" aria-labelledby="nickname-label">
+        <label for="name" id="nickname-label">Choose your name (4 to 12 characters long)</label>
         <br>
-        <input type="text" id="name" name="nickname" required minlength="4" maxlength="12"/>
-        <p class="saved-name"></p>
+        <input type="text" id="name" name="nickname" placeholder="St. Nick" minlength="4" maxlength="12" aria-required="true"/>
+        <p class="saved-name" aria-live="polite"></p>
         <button type="button" class="save-name">Save my nickname</button>
-        <p class="message selected"></p>
+        <p class="message selected" aria-live="assertive"></p>
     </section>
-    <main>
-        <div class="avatar-selector">
-            <p class="chosen-avatar"></p>
-            <p class="avatar-prompt">Select your avatar!</p>
-            <ul>
-                <li>🎄</li>
-                <li>⛄</li>
-                <li>🎅🏼</li>
-                <li>❄</li>
-                <li>🦌</li>
+    <main role="main">
+        <div class="avatar-selector" aria-labelledby="avatar-prompt">
+            <p class="chosen-avatar" aria-live="polite"></p>
+            <p id="avatar-prompt" class="avatar-prompt">Select your avatar!</p>
+            <ul aria-label="Avatar choices">
+                <li role="button" tabindex="0" aria-label="Christmas tree">🎄</li>
+                <li role="button" tabindex="0" aria-label="Snowman">⛄</li>
+                <li role="button" tabindex="0" aria-label="Santa">🎅🏼</li>
+                <li role="button" tabindex="0" aria-label="Snowflake">❄</li>
+                <li role="button" tabindex="0" aria-label="Reindeer">🦌</li>
             </ul>
         </div>
     </main>
-    <button class="start-game">Lets get started!</a>
+    <button class="start-game" role="button">Lets get started!</button>
     <script src="assets/js/index.js"></script>
 </body>
+
 
 </html>
