@@ -21,27 +21,28 @@
 </head>
 
 <body>
-    <nav>
-        <button id="restart">Restart Quiz 🔄</button>
-        <a href="./game.html" class="button start-game">Share my results!</a>
+    <nav role="navigation">
+        <button id="restart" aria-label="Restart Quiz">Restart Quiz 🔄</button>
+        <a href="./game.html" class="button start-game" role="button" aria-label="Share my results">Share my results!</a>
     </nav>
-    <header>
+    <header role="banner">
         <h1>Christmas Quiz 2023</h1>
-        <p>Results!</p>
+        <p aria-live="polite">Results!</p>
     </header>
-    <section id="timer">
-        <p class="teaser">How well do you know Christmas?!</p>
+    <section id="timer" aria-labelledby="quiz-teaser">
+        <p id="quiz-teaser" class="teaser">How well do you know Christmas?!</p>
     </section>
-    <section id="question">
+    <section id="question" aria-live="polite">
         <p class="title"></p>
         <p class="description"></p>
-        <img class="category-image" src="./assets/images/cookie.webp">
+        <img class="category-image" src="./assets/images/cookie.webp" alt="Category image">
         <p class="suggestion"></p>
     </section>
-    <main>
+    <main role="main" aria-labelledby="score">
         <p id="score">Wow results!</p>
     </main>
     <script src="assets/js/results.js"></script>
 </body>
+
 
 </html>
