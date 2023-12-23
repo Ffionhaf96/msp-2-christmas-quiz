@@ -34,9 +34,11 @@ body {
     /* Give everything a little space between rows */
     row-gap: 3%;
     /* Make everything centered on X and Y axis */
-    justify-items: center;
     align-items: center;
+    justify-items: center;
+    /* min-height: 90%; */
     height: 100vh;
+    min-height: 90%;
 }
 
 #timer {
@@ -138,6 +140,10 @@ main {
     font-weight: 700;
 }
 
+main:not(.questions) {
+    background-color: var(--midnight-blue);
+}
+
 button {
     color: var(--snowy-white);
     background-color: var(--classic-red);
@@ -175,3 +181,4 @@ button {
     width: auto;
     border-style: dashed;
 }
+
