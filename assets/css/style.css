@@ -176,8 +176,8 @@ button {
 }
 
 .category-image {
-    height: 20vh;
-    width: auto;
+    height: auto;
+    width: var(--component-width);
     border-style: dashed;
 }
 
