@@ -49,7 +49,9 @@ async function calculateResults() {
     // set all the result category properties
     document.querySelector('.title').textContent = `You are a ${resultCategory.title}`;
     document.querySelector('.description').textContent = resultCategory.description;
-    document.querySelector('.category-image').src = `./assets/images/${resultCategory.image}`;
+    const categoryImage = document.querySelector('.category-image');
+    categoryImage.src = `./assets/images/${resultCategory.image}`;
+    categoryImage.setAttribute("alt", resultCategory.alt);
     document.querySelector('.suggestion').textContent = resultCategory.suggestion;
     // show score in score element
     document.querySelector('#score').textContent = `You scored ${score} / ${questionLength}`;
