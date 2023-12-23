@@ -58,7 +58,7 @@ async function showQuestion(index) {
     console.debug(question);
 
     // get the elements to replace data
-    const questionSection = document.getElementById('question');
+    const questionSection = document.querySelector('#question h2');
 
     // change the textContent with the question
     questionSection.textContent = question.question;
