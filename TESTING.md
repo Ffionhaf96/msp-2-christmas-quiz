@@ -93,27 +93,51 @@ I subjected the JavaScript code of all the pages to validation using the [JSHint
 
 ### Accessibility
 
-I ran the site through the [Wave Web Accessibility Evaulation Tool](https://wave.webaim.org/). 
+I ran the site through the [Wave Web Accessibility Evaulation Tool](https://wave.webaim.org/). You can [view the full report for the Christmas Quiz site](https://wave.webaim.org/report#/https://ffionhaf96.github.io/msp-2-christmas-quiz/) I created but I have also included key aspects of the report below.
+
+#### Summary
+No error were found and I encountered 4 alerts on initial testing, headers not using <hX> element and suspicious alt text which have been rectified. Manual testing was still encouraged by the WAVE tool.
 
 #### **Accessibility Errors**
-<!--> Insert details of any errors or warnings here <-->
 
+#### Possible headings alerts
+As mentioned in the summary - 4 alerts were found with citing 3 possible headings that were not using heading elements. 
+
+<details><summary>Possible headings alert</summary>
+<img src="./docs/images/testing/accessibility/WAVE-game-possible-heading-no-heading-element.png">
+</details>
+
+#### Suspicious alt text alert on results page
+The last alert was aruond suspicious alt text for the images provided on the results page which was rectified by supplying unique alt text for each image via the `alt` key in the `resultsCategory` array in `questions.json`
+
+<details><summary>Suspicious alt text in results.html</summary>
+<img src="./docs/images/testing/accessibility/WAVE-suspicious-alt-text.png">
+</details>
+
+#### Contrast error found in Firefox devtools
+Early in development in the `timer` section of the I was using white text on a bright yellow background which failed WCAG standards for accessible text. 
+<details><summary>Failed accessible text</summary>
+<img src="./docs/images/testing/accessibility/WCAG-contrast-failure.png">
+</details>
+This was then amended to use a dark green from the sites color pallete which passes the contrast test.
+<details><summary>Passing accessible text</summary>
+<img src="./docs/images/testing/accessibility/WCAG-contrast-fixed-passing.png">
+</details>
 
 #### **Wave Web Accessibility Results Post-Fix**
 
 <details><summary>Wave Web Accessibility Final Results index.html</summary>
-<img src="">
+<img src="./docs/images/testing/accessibility/WAVE-index-final.png">
 </details>
 
 <details><summary>Wave Web Accessibility Final Results  game.html</summary>
-<img src="">
+<img src="./docs/images/testing/accessibility/WAVE-game-final.png">
 </details>
 
-<details><summary>Wave Web Accessibility Final Results  results.html</summary>
-<img src="">
+<details><summary>Wave Web Accessibility Final Results results.html</summary>
+<img src="./docs/images/testing/accessibility/WAVE-results-final.png">
 </details>
 
-- - -
 
 ### Performance
 I utilized Google Chrome Dev Tools' Lighthouse to assess the performance of the site.
@@ -122,17 +146,15 @@ I utilized Google Chrome Dev Tools' Lighthouse to assess the performance of the 
 #### **Original Results**
 
 <details><summary>Home Page</summary>
-<img src="">
 
 *Home Page - Desktop*
 
-<img src="">
+<img src="/docs/images/testing/performance/lighthouse-desktop-100.png">
 
 *Home Page - Mobile*
 
-<img src="">
-
-*Main Page - Mobile - Accessibility Warning*
+<img src="/docs/images/testing/performance/lighthouse-mobile-100.png">
+<img src="/docs/images/testing/performance/lighthose-mobile-simulated-env.png">
 
 </details>
 
@@ -314,8 +336,15 @@ Throughout the development and testing phases, besides the enhancements mentione
     - Fix: `startTimer()` was being started in two places instead of just one. Changed to start in only one.
     __see__: use `git --no-pager diff c1b48936f188e9c6e8c033edb6d53111fe63f2dc 1759283cac75f9a47233ffbe7f190dc8fde9814b -- game.js` to see the exact fix.
 
-- Bug 4 - 
+- Bug 4 - Bluring elements for modal to appear only visible by targetting `body` element made everything blurred.
+    - Fix: For this I had to find how to select every element that was a `child` of `body` and then not apply a blur to the modal. Luckily there is a property you can access on an element called `child`. This then lead me to Bug 5. 
 
+- Bug 5 - Trying to apply `.classList.add("blur-10");` to each element from `body` using the `child` property did not work.
+    - Fix: The `child` property returns a HTMLCollection which is not iterable. So I had to find a way to convert HTMLCollection to an Array. I found a solution on StackOverflow that suggest using `Array.from(HTMLCollection)`. This worked well and enabled me to apply `.classList.add("blur-10");`
+
+- Bug 6 - Passing an argument to function that handles click event made function immediately execute without click event which caused the  e.g. `houseRules.addEventListener('click', handleHouseRules(true)`
+    - Fix: Passing the argument to the function via the [`bind`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind) method made the argument available to the function but didn't invoke a function call immediately.
+    ![console log showing both true and false arguments being triggered for the same function within 2 milliseconds](FILL IN WITH CONSOLE EPOCH IMG)
 
 - - -
 ### Known & Remaining Bugs
