@@ -36,8 +36,7 @@ body {
     /* Make everything centered on X and Y axis */
     align-items: center;
     justify-items: center;
-    /* min-height: 90%; */
-    height: 100vh;
+    height: 95vh;
     min-height: 90%;
 }
 
