@@ -276,10 +276,8 @@ Other code attributions can be found in the [Testing documentation](./TESTING.md
 
 - - -
 ### Media
-
-#### **Photos**
 * [Favicon Image](https://favicon.io/emoji-favicons/santa-claus/)
-* [Avatar Images]()
+* [Avatar Images](https://emojidb.org/christmas-emojis)
 * [Christmas Category Images in Results page - DALL-E v3 via ChatGPT](https://openai.com/dall-e-3)
 
 ## Acknowledgements
