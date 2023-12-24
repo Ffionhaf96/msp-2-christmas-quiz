@@ -84,7 +84,7 @@ I validated all CSS code in `style.css` using [W3C CSS Validator](https://jigsaw
 
 #### **CSS Validation Result**
 
-No validation errors were found. This is likely because VSCode has a [built-in CSS linter](https://code.visualstudio.com/docs/languages/css#_syntax-verification-linting)
+No validation errors were found. This is likely because VSCode has a [built-in CSS linter](https://code.visualstudio.com/docs/languages/css#_syntax-verification-linting). 
 
 <details><summary>CSS Jigsaw Validation Final Results</summary>
 <img src="./docs/images/testing/validation/jigsaw-no-error.png">
