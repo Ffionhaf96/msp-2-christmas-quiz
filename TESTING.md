@@ -235,28 +235,31 @@ I conducted tests on the site in alignment with my defined user stories:
 **Screen Recordings/ Screenshots of User Stories**
 
 <details><summary>User Story 1: Discover Festive Knowledge</summary>
-<img src="">
+<img src="./docs/images/testing/user-stories/discover-festive-knowledge.png">
 </details>
+<img src="./docs/images/testing/user-stories/engaging-content.jpeg">
 
-<details><summary>User Story 2: Engaging Visual Content</summary>
-<img src="">
+s<details><summary>User Story 2: Engaging Visual Content</summary>
+A summary of the results includes christmas themed images generated using OpenAI's DALL-E v3.
+<img src="./docs/images/testing/user-stories/engaging-content.jpeg">
+Fun Christmas emojis can be chosen as an avatar for the Quiz which appears next a users nickname in the results page.
+<img src="./docs/images/testing/user-stories/engaging-avatars.jpeg">
 </details>
 
 <details><summary>User Story 3: Understanding Quiz Results</summary>
-
-
+The house rules modal is a quick and easy way for users to get situated with the light hearted and simple rules of the Christmas quiz.
 https://github.com/Ffionhaf96/msp-2-christmas-quiz/assets/140890469/836290af-fdda-4c9d-8ee0-8ee1e11f1805
-
-
 </details>
 
 <details><summary>User Story 4: Multi-Device Accessibility</summary>
-<img src="">
+The quiz can be enjoyed no matter what device is being used whether it's a small smartphone screen
+<img src="./docs/images/testing/user-stories/multi-device-smartphone.jpeg">
+or a bigger screen like on a desktop monitor or laptop
+<img src="./docs/images/testing/user-stories/multi-device-big-screen.jpeg">
 </details>
 
 <details><summary>User Story 5:  Ease of Navigation</summary>
 <img src="">
-
 </details>
 - - -
 
