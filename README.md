@@ -269,9 +269,19 @@ This process will clone the project to your local machine for development purpos
 
 ## Credits
 
+The most used resource during the project by far was [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web). This resource allowed me to learn almost everything I needed to know for this project with detailed examples and reference documentation for key areas (including but not limited to):
+- [CSS Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout)
+- [Javascript eventListener() method](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- [JavaScript localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- [JavaScript forEach method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+- [JavaScript setInterval for the countdown timer function of the quiz](https://developer.mozilla.org/en-US/docs/Web/API/setInterval) and the counterpart [clearInterval method](https://developer.mozilla.org/en-US/docs/Web/API/clearInterval) to cancel the countdown timer.
+- 
+
 ### Code
 
-* 
+Any code that has been found from a specific resource to fix an issue faced during development and adapted has been signposted within the code itself as a comment above the adapted code. e.g. [using Array.from() to transform HTMLCollection to an iterable Array](https://github.com/Ffionhaf96/msp-2-christmas-quiz/blob/main/assets/js/index.js#L27C36-L27C36)
+
+Other code attributions can be found in the [Testing documentation](./TESTING.md#bugs--fixes)
 
 - - -
 ### Text Content
@@ -282,8 +292,9 @@ This process will clone the project to your local machine for development purpos
 ### Media
 
 #### **Photos**
-* [Favicon Image]()
+* [Favicon Image](https://favicon.io/emoji-favicons/santa-claus/)
 * [Avatar Images]()
+* [Christmas Category Images in Results page - DALL-E v3 via ChatGPT](https://openai.com/dall-e-3)
 
 ## Acknowledgements
 - My mentor [Daisy McGirr](https://github.com/Dee-McG) for all her help and advice throughout the project.
