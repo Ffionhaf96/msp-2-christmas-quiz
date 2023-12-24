@@ -13,6 +13,26 @@ async function getQuestionData() {
     }
 }
 
+/**
+ * Resets the quiz state and redirects the user to the start page.
+ * This function clears all quiz-related data stored in the browser's local storage
+ * and navigates the user back to the initial quiz page (index.html).
+ *
+ * @function restartQuiz
+ * Side effects:
+ * - Clears the entire local storage, removing all stored data for the domain.
+ * - Changes the current location of the window, causing a redirection to 'index.html'.
+ * Preconditions:
+ * - The function assumes that quiz-related data is stored in the browser's local storage.
+ * - There is an 'index.html' file at the root of the website to redirect to.
+ * Postconditions:
+ * - The browser's local storage is cleared.
+ * - The user is redirected to the 'index.html' page to restart the quiz.
+ */
+function restartQuiz() {
+    localStorage.clear();
+    window.location.href = "index.html"
+}
 function restartQuiz() {
     localStorage.clear();
     window.location.href = "index.html"
@@ -63,7 +83,7 @@ async function getResultCategory(scorePercentage) {
     const resultCategories = questionData.resultCategories;
     console.log(resultCategories);
     let index = 0;
-    if (scorePercentage == 0){
+    if (scorePercentage == 0) {
         return resultCategories[index];
     }
     else if (scorePercentage <= 20) {
@@ -78,4 +98,54 @@ async function getResultCategory(scorePercentage) {
         return resultCategories[++index];
     }
 }
+
 calculateResults();
+
+async function captureScreen() {
+    try {
+        // Use html2canvas to capture the current view of the page
+        const canvas = await html2canvas(document.body);
+        return canvas;
+    } catch (err) {
+        console.error('Error capturing the screen:', err);
+    }
+}
+
+
+async function canvasToBlob(canvas) {
+    return new Promise((resolve, reject) => {
+        canvas.toBlob(blob => {
+            if (blob) {
+                resolve(blob);
+            } else {
+                reject(new Error('Canvas to Blob conversion failed'));
+            }
+        }, 'image/png');
+    });
+}
+
+async function shareScreen() {
+    try {
+        const canvas = await captureScreen();
+        const blob = await canvasToBlob(canvas);
+        const file = new File([blob], 'screenshot.png', { type: 'image/png' });
+
+        // Check if the Web Share API is available and supports file sharing
+        if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+            await navigator.share({
+                files: [file],
+                title: 'Christmas Quiz',
+                text: 'Can you beat my score?!'
+            });
+            console.log('Screenshot shared successfully!');
+        } else {
+            console.error('Web Share API is not available or does not support file sharing.');
+        }
+    } catch (err) {
+        console.error('Sharing failed:', err);
+    }
+}
+
+const shareButton = document.querySelector('.share');
+//add event listener to share button
+shareButton.addEventListener('click', shareScreen)
