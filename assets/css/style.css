@@ -16,6 +16,7 @@ html {
     --snowy-white: rgba(255, 255, 255, 1);
     --gold: rgba(255, 215, 0, 1);
     --midnight-blue: rgba(0, 0, 139, 1);
+    --selection-white: rgba(255,255,255,0.3);
     --component-width: 80%;
 }
 
@@ -49,9 +50,25 @@ body.results {
     "question";
     grid-template-rows: 1fr repeat(2, min-content) 1fr max-content;
 }
+
 body.game {
-    grid-template-rows: repeat(3, min-content) 0fr 300px min-content;
+    grid-template-areas:
+    "nav"
+    "header"
+    "timer"
+    "main"
+    "button";
+    /* grid-template-rows: min-content repeat(2, 1fr) 3fr min-content; */
+    grid-template-rows: min-content repeat(2, 1fr) 500px min-content;
+    grid-template-columns: 1fr;
 }
+
+.questions {
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+
 
 #timer {
     color: var(--evergreen-green);
@@ -86,7 +103,6 @@ header {
     border-color: var(--snowy-white);
     border-style: dashed;
     border-width: 3px;
-    padding-bottom: 10px;
     /* Apply timer to correct area in Grid layout */
     grid-area: timer;
     width: var(--component-width);
@@ -154,6 +170,10 @@ main:not(.questions) {
     background-color: var(--midnight-blue);
 }
 
+button:hover {
+    filter: brightness(150%);
+}
+
 button {
     color: var(--snowy-white);
     background-color: var(--classic-red);
@@ -179,7 +199,7 @@ button {
     padding-left: 0;
 }
 .selected-avatar {
-    background-color: rgba(255,255,255,0.3);
+    background-color: var(--selection-white);
 }
 .chosen-avatar {
     line-height: 0%;
