@@ -201,19 +201,6 @@ By employing these fonts, we aim to create a visually delightful and user-friend
 
 ## Features
 All of the features have been outlined and tested in [Feature Testing Results Table](./TESTING.md#feature-testing-results-table)
-### All Sections/Pages
-
-#### **Favicon**
-
-<details><summary>Screenshots</summary>
-
-<img src="insert">
-
-*Favicon*
-
-</details>
-
-For "The Christmas Quiz", a unique favicon was created to reflect the festive theme of the website. The favicon represents a small, stylized festive ornament, instantly recognizable and tying in with the overall holiday theme. This small but crucial detail ensures brand consistency across browser tabs, bookmarks, and history, enhancing user recognition and the overall aesthetic appeal of the quiz website.
 
 ## Bugs and Fixes
 [See TESTING.md for full breakdown of testing & bugs](/TESTING.md#bugs--fixes)
