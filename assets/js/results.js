@@ -23,7 +23,7 @@ const restartQuizButton = document.querySelector('#restart');
 restartQuizButton.addEventListener('click', restartQuiz)
 
 const teaser = document.querySelector('.teaser');
-teaser.textContent = `How well do you know Christmas - ${localStorage.getItem('nickname')}?!`;
+teaser.textContent = `How well do you know Christmas... ${localStorage.getItem('nickname')}?!`;
 
 
 async function calculateResults() {
