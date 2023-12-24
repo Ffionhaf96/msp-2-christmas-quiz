@@ -258,6 +258,11 @@ or a bigger screen like on a desktop monitor or laptop
 </details>
 
 <details><summary>User Story 5:  Ease of Navigation</summary>
+
+
+https://github.com/Ffionhaf96/msp-2-christmas-quiz/assets/140890469/c63b57bb-deee-424c-aab2-a327339a3e47
+
+
 <img src="">
 </details>
 - - -
