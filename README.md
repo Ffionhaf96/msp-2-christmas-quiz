@@ -19,7 +19,7 @@ This is the documentation for my web application: The Christmas Quiz. It has bee
 2. [Technologies Used](#technologies-used)
 3. [Features](#features)
 4. [JavaScript Functionality](#javascript-functionality)
-5. [Testing & Bugs](#testing--bugs)
+5. [Bugs & Fixes](#bugs-and-fixes)
 6. [Deployment](#deployment)
 7. [Credits](#credits)
 - - -
@@ -169,13 +169,13 @@ I have selected a vibrant and harmonious colour palette that combines traditiona
 * Accessibility: Ensure that text contrasts well against backgrounds for readability and consider accessibility guidelines for a broad range of users.
 * Responsiveness: The design should be responsive and adapt well to various screen sizes and devices.
 
-By adhering to these color and design guidelines, an engaging and visually appealing Christmas Quiz experience that captivates our users and spreads holiday cheer will be achieved.
+By adhering to these color and design guidelines, an engaging and visually appealing Christmas Quiz experience that captivates the users and spreads holiday cheer will be achieved.
 
 - - -
 #### **Fonts**
-For our Christmas Quiz website, I've integrated [Google Fonts](https://fonts.google.com/) to enhance the festive atmosphere through typography. Our selections include [Mountains of Christmas](https://fonts.google.com/specimen/Mountains+of+Christmas) (with a fallback of Sans Serif) for the logo and key headings. This font exudes a cheerful and merry vibe, perfectly aligning with the Christmas theme. It also maintains excellent readability and possesses a playful, yet professional appearance.
+For the Christmas Quiz website, I've integrated [Google Fonts](https://fonts.google.com/) to enhance the festive atmosphere through typography. The selections include [Mountains of Christmas](https://fonts.google.com/specimen/Mountains+of+Christmas) (with a fallback of Sans Serif) for the logo and key headings. This font exudes a cheerful and merry vibe, perfectly aligning with the Christmas theme. It also maintains excellent readability and possesses a playful, yet professional appearance.
 
-Additionally, we have chosen [Open Sans](https://fonts.google.com/specimen/Open+Sans) (with a fallback of Sans Serif) for the main body text. This font complements Mountains of Christmas well, offering a clean and neutral contrast. Open Sans is renowned for its versatility across different weights and is exceptionally legible in digital formats. Its modern and friendly character adds to the welcoming and engaging user experience on our Christmas-themed site.
+Additionally, we have chosen [Open Sans](https://fonts.google.com/specimen/Open+Sans) (with a fallback of Sans Serif) for the main body text. This font complements Mountains of Christmas well, offering a clean and neutral contrast. Open Sans is renowned for its versatility across different weights and is exceptionally legible in digital formats. Its modern and friendly character adds to the welcoming and engaging user experience on the Christmas-themed site.
 
 By employing these fonts, we aim to create a visually delightful and user-friendly interface that resonates with the joy and spirit of the Christmas season.
 - - -
@@ -200,7 +200,7 @@ By employing these fonts, we aim to create a visually delightful and user-friend
     * Used the create Christmas themed content such as the quiz Q&As.
 
 ## Features
-
+All of the features have been outlined and tested in [Feature Testing Results Table](./TESTING.md#feature-testing-results-table)
 ### All Sections/Pages
 
 #### **Favicon**
@@ -215,22 +215,8 @@ By employing these fonts, we aim to create a visually delightful and user-friend
 
 For "The Christmas Quiz", a unique favicon was created to reflect the festive theme of the website. The favicon represents a small, stylized festive ornament, instantly recognizable and tying in with the overall holiday theme. This small but crucial detail ensures brand consistency across browser tabs, bookmarks, and history, enhancing user recognition and the overall aesthetic appeal of the quiz website.
 
-## JavaScript Functionality
-This section provides a straightforward, non-technical explanation of the processes occurring in the JavaScript code as the user progresses through the game. This is meant to complement, not replace, the comments already present in the JavaScript code.
-
-### Welcome Section
-
-details><summary>Details</summary>
-* User enters their nickname and clicks the 'Let's Get Started' button.
-    * In cases where the name field is left empty, a warning pops up asking the user to input a name.
-    * The entered name is saved for later use on the results page.
-* Users have the option to select an avatar that will represent them during the game.
-* Pressing the start game button starts the main JavaScript function which contains all the game's functionality.
-
-</details>
-
 ## Bugs and Fixes
-[See TESTING.md for full breakdown of testing & bugs](TESTING.md)
+[See TESTING.md for full breakdown of testing & bugs](/TESTING.md#bugs--fixes)
 
 ## Deployment
 
