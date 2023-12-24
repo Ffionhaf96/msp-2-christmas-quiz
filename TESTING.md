@@ -247,7 +247,11 @@ Fun Christmas emojis can be chosen as an avatar for the Quiz which appears next 
 
 <details><summary>User Story 3: Understanding Quiz Results</summary>
 The house rules modal is a quick and easy way for users to get situated with the light hearted and simple rules of the Christmas quiz.
+
+
 https://github.com/Ffionhaf96/msp-2-christmas-quiz/assets/140890469/836290af-fdda-4c9d-8ee0-8ee1e11f1805
+
+
 </details>
 
 <details><summary>User Story 4: Multi-Device Accessibility</summary>
@@ -258,12 +262,12 @@ or a bigger screen like on a desktop monitor or laptop
 </details>
 
 <details><summary>User Story 5:  Ease of Navigation</summary>
+The restart button allows for users to either midway through the quiz, restart and reach the beginning of the quiz. They can also accomplish this at the end once they receive their results.
 
 
 https://github.com/Ffionhaf96/msp-2-christmas-quiz/assets/140890469/c63b57bb-deee-424c-aab2-a327339a3e47
 
 
-<img src="">
 </details>
 - - -
 
@@ -286,6 +290,17 @@ The site was tested on the following browsers.
 
 ### Feature Testing Results Table
 
+#### Site Wide
+
+| Feature            | Expected Outcome                                                                                | Testing Performed                                                                                                                       | Result                                                                       | Pass/Fail |
+|--------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+| Whole Page         | Layout is fully responsive                                                                      | Checked layout using dev tools to simulate multiple viewports of different devices. Tested on real devices with variable viewport size. | Page elements were responsive on all devices largely due to use of CSS Grid. | Pass      |
+| Main Page Contents | Colors of elements are correctly matched to that of the color pallete defined in the README.md. | Manually checked browsers were displaying colors correctly and checked CSS variables were being used throughout for consistency.        | Content displayed as expected.                                               | Pass      |
+| Favicon            | Appears in browser tab                                                                          | Checked browser tabs on multiple devices. Including saving as a shortcut on Android device via Samsung Browser.                         | Favicon appeared always.                                                     | Pass      |
+| Console            | No debug statements are logged to console. Only caught errors such as failure to fetch data.    | Played through quiz and viewed browser console to manually confirm.                                                                     | No errors were found to be logged.                                           | Pass      |
+
+
+#### Index Page
 
 
 - - -
