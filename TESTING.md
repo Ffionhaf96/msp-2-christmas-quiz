@@ -237,7 +237,6 @@ I conducted tests on the site in alignment with my defined user stories:
 <details><summary>User Story 1: Discover Festive Knowledge</summary>
 <img src="./docs/images/testing/user-stories/discover-festive-knowledge.png">
 </details>
-<img src="./docs/images/testing/user-stories/engaging-content.jpeg">
 
 s<details><summary>User Story 2: Engaging Visual Content</summary>
 A summary of the results includes christmas themed images generated using OpenAI's DALL-E v3.
