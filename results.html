@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Christmas Quiz</title>
     <meta charset="utf-8">
@@ -16,9 +17,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Mountains of Christmas Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap"
-        rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" media="print"
+        onload="this.media='all'">
 </head>
+
 <body class="results">
     <nav>
         <button id="restart" aria-label="Restart Quiz">Restart Quiz 🔄</button>
@@ -32,8 +37,9 @@
     </section>
     <section id="question" aria-live="polite">
         <h2 class="title"></h2>
-        <p class="description">This is placeholder content that should never been seen. We are making it about the same length to reduce CLS.</p>
-        <img src="./assets/images/cookie.webp" width="820" height="820" alt="Category image" class="category-image" >
+        <p class="description">This is placeholder content that should never been seen. We are making it about the same
+            length to reduce CLS.</p>
+        <img src="./assets/images/cookie.webp" width="820" height="820" alt="Category image" class="category-image">
         <p class="suggestion"></p>
     </section>
     <main role="main" aria-labelledby="score">
@@ -41,4 +47,5 @@
     </main>
     <script src="assets/js/results.js"></script>
 </body>
+
 </html>
