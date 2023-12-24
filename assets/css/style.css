@@ -29,15 +29,28 @@ body {
         "question"
         "main"
         "button";
-    grid-template-rows: 0.1fr 0.1fr 0.2fr 0.3fr max-content 0.1fr;
+    grid-template-rows: minmax(0, 1fr) 1fr 1fr 3fr max-content 1fr;
     grid-template-columns: 1fr;
     /* Give everything a little space between rows */
     row-gap: 3%;
     /* Make everything centered on X and Y axis */
     align-items: center;
     justify-items: center;
-    height: 95vh;
-    min-height: 90%;
+    height: 90vh;
+    /* min-height: 90%; */
+}
+
+body.results {
+    grid-template-areas:
+    "nav"
+    "header"
+    "timer"
+    "main"
+    "question";
+    grid-template-rows: 1fr repeat(2, min-content) 1fr max-content;
+}
+body.game {
+    grid-template-rows: repeat(3, min-content) 0fr 300px min-content;
 }
 
 #timer {
@@ -77,7 +90,6 @@ header {
     /* Apply timer to correct area in Grid layout */
     grid-area: timer;
     width: var(--component-width);
-    font-size: 22px;
     font-weight: 700;
     align-self: center;
 }
@@ -122,7 +134,6 @@ header {
     border-width: 3px;
     width: 80%;
     font-size: 22px;
-    font-weight: 700;
 }
 
 #name {
