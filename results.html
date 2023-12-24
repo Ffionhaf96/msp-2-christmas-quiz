@@ -13,15 +13,6 @@
     <link rel="manifest" href="/site.webmanifest">
     <!-- Import Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Import Christmas fonts from google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Mountains of Christmas Font -->
-    <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" media="print"
-        onload="this.media='all'">
 </head>
 
 <body class="results">
@@ -39,7 +30,7 @@
         <h2 class="title"></h2>
         <p class="description">This is placeholder content that should never been seen. We are making it about the same
             length to reduce CLS.</p>
-        <img src="./assets/images/cookie.webp" width="820" height="820" alt="Category image" class="category-image">
+        <img  fetchpriority="high" src="./assets/images/cookie.webp" width="820" height="820" alt="Category image" class="category-image">
         <p class="suggestion"></p>
     </section>
     <main role="main" aria-labelledby="score">
