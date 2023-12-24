@@ -28,29 +28,23 @@ I subjected the HTML code of all the pages to validation using the [W3C HTML Val
 
 #### **Errors**
 
-<!--> Detail the errors that show up below <-->
-
-<details><summary>Error 1</summary>
-<img src="">
+<details><summary>Bad value for button attribute role on li</summary>
+<img src="./docs/images/testing/validation/html-validator-bad-value-button-role.png">
 </details>
-
-<!--> insert brief description of the erros and the fix implemented to remove the error <-->
 
 #### **HTML Validation Post-Fix**
 
 <details><summary>HTML Validation index.html</summary>
-<img src="">
+<img src="/docs/images/testing/validation/html-validator-no-error-index.png">
 </details>
 
 <details><summary>HTML Validation game.html</summary>
-<img src="">
+<img src="/docs/images/testing/validation/html-validator-no-error-game.png">
 </details>
 
 <details><summary>HTML Validation results.html</summary>
-<img src="">
+<img src="/docs/images/testing/validation/html-validator-no-error-results.png">
 </details>
-
-- - -
 
 ### CSS Validation
 
@@ -92,27 +86,25 @@ In my forEach loops I was referencing an unused index in two occassions.
 <img src="./docs/images/testing/validation/es-lint-indexjs-no-unused-vars.png">
 </details>
 
-<details><summary>JavaScript Validation Final Results</summary>
+<details><summary>JSHint dot notation</summary>
 JSHint picked up on a better style for accessing a property of an element.
 <img src="./docs/images/testing/validation/js-hint-index.png">
 </details>
 
 #### **JavaScript Validation Post-Fix**
 
-<details><summary>JavaScript Validation Final Results</summary>
+<details><summary>JavaScript Validation Final Index</summary>
 <img src="./docs/images/testing/validation/js-hint-index.png">
 </details>
 
 <details><summary>JavaScript Validation Final Results</summary>
-<img src="./docs/images/testing/validation/js-hint-index.png">
+<img src="./docs/images/testing/validation/js-hint-game.png">
 </details>
 
 <details><summary>JavaScript Validation Final Results</summary>
-<img src="./docs/images/testing/validation/js-hint-index.png">
+<img src="./docs/images/testing/validation/js-hint-results.png">
 </details>
 
-
-- - -
 
 ### Accessibility
 
@@ -269,12 +261,10 @@ I conducted tests on the site in alignment with my defined user stories:
 #### **Responsiveness / Device Testing**
 
 The site was tested on the following devices:
-
-<!--> Insert which devices it was tested on <-->
-
-**Bugs found - specific to device testing:**
-
-<!--> Insert bug information here <-->
+- Dell Precision 5530 - 2160p Screen
+- Phillips Ultrawide 34" monitor - 1440p screen
+- Samsung Galaxy S23 Ultra - 2160p screen
+- Google Chrome Developer Tools - simulator for all different device options as well as using the adjustable sizing options
 
 - - -
 #### **Browser Compatibility**
@@ -283,16 +273,9 @@ The site was tested on the following browsers.
 * Google Chrome
 * Mozilla Firefox
 
-**Bugs found - specific to browser testing:**
-
-<!--> Insert bug information here <-->
-
-- - -
-
 ### Feature Testing Results Table
 
 
-<!--> Insert feature testing information here <-->
 
 - - -
 ## Bugs & Fixes
