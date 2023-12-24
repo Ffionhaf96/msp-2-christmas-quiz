@@ -142,7 +142,7 @@ Both the main index.html page and the 404 page feature a non-clickable logo at t
 The Christmas Quiz web application is designed to offer an immersive and festive user experience. The colour palette and design elements are carefully chosen to evoke the warmth and joy of the holiday season, ensuring that users feel the Christmas spirit while interacting with the app.
 
 ##### **Colour Palette**
-
+![Color Palette](/docs/images/mockup/color-pallette.png)
 I have selected a vibrant and harmonious colour palette that combines traditional Christmas colors with a touch of elegance and winter charm:
 
     Classic Red (rgba(255, 0, 0, 1)): A vibrant, warm red that is emblematic of Christmas. Ideal for attention-grabbing elements like buttons, notifications, and progress bars.
