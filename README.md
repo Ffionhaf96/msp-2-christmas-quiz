@@ -81,7 +81,7 @@ In light of the research and defined goals for "The Christmas Quiz," I crafted a
 - - -
 ### Content
 
-The Christmas Quiz offers a merry foray into the world of holiday trivia with 10 multiple-choice questions, each designed to test your general knowledge of all things Christmas. This festive quiz covers a wide range of yuletide topics, from historical tidbits and global traditions to famous characters and seasonal stories, without focusing on specific categories.
+The Christmas Quiz offers a merry foray into the world of holiday trivia with 24 multiple-choice questions, each designed to test your general knowledge of all things Christmas. This festive quiz covers a wide range of yuletide topics, from historical tidbits and global traditions to famous characters and seasonal stories, without focusing on specific categories.
 
 As you answer each question, your Christmas savvy is calculated and then presented as a percentage score on the results page. This score is a lighthearted way to gauge your Christmas cheer and knowledge, transforming your correct answers into a festive fun rating.
 
