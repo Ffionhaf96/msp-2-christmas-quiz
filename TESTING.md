@@ -143,9 +143,16 @@ This was then amended to use a dark green from the sites color pallete which pas
 I utilized Google Chrome Dev Tools' Lighthouse to assess the performance of the site.
 
 
-#### **Original Results**
+#### **Lighthouse Results**
+<details><summary>Performance Emulation</summary>
+All Mobile benchmarks in Chrome Dev Tool's Lighthouse were ran emulating a Moto G Power smartphone using Chromium 120.0.0.0 and a slow 4G network connection.
+<img src="/docs/images/testing/performance/lighthose-mobile-simulated-env.png">
+</details>
+
+Desktop benchmarks did not have any emualtion applied.
 
 <details><summary>Home Page</summary>
+As this was the simplest page it was not particularly difficult to achieve a 100 lighthouse score. There is no data being fetched nor is there any big LCP or CLS to be concerned about because there is no dynamic elements.
 
 *Home Page - Desktop*
 
@@ -154,37 +161,31 @@ I utilized Google Chrome Dev Tools' Lighthouse to assess the performance of the 
 *Home Page - Mobile*
 
 <img src="/docs/images/testing/performance/lighthouse-mobile-100.png">
-<img src="/docs/images/testing/performance/lighthose-mobile-simulated-env.png">
 
 </details>
 
 <details><summary>Game Page</summary>
-<img src="">
 
 *Game Page - Desktop*
 
-<img src="">
+<img src="/docs/images/testing/performance/lighthouse-desktop-game-99.png">
 
 *Game Page - Mobile*
 
-<img src="">
-
-*Game Page - Mobile - Accessibility Warning*
+<img src="/docs/images/testing/performance/lighthouse-mobile-game-94.png">
 
 </details>
 
 <details><summary>Results Page</summary>
-<img src="">
 
 *Results Page - Desktop*
 
-<img src="">
+<img src="/docs/images/testing/performance/lighthouse-desktop-results-100.png">
 
 *Results Page - Mobile*
 
-<img src="">
+<img src="/docs/images/testing/performance/lighthouse-mobile-results-91.png">
 
-*Results Page - Mobile - Accessibility Warning*
 
 </details>
 
@@ -199,59 +200,8 @@ I utilized Google Chrome Dev Tools' Lighthouse to assess the performance of the 
 
 <img src="">
 
-*404 - Mobile - Warning*
-
 </details>
 
-<!--> Detail information regarding the concerns raised by Lighthouse. <-->
-
-#### **Final Results**
-
-<details><summary>Home Page</summary>
-<img src="">
-
-*Home Page - Desktop*
-
-<img src="">
-
-*Home Page - Mobile*
-
-</details>
-
-<details><summary>Game Page</summary>
-<img src="">
-
-*Game Page - Desktop*
-
-<img src="">
-
-*Game Page - Mobile*
-
-</details>
-
-<details><summary>Results Page</summary>
-<img src="">
-
-*Results Page - Desktop*
-
-<img src="">
-
-*Results Page - Mobile*
-
-</details>
-
-<details><summary>404</summary>
-<img src="">
-
-*404 - Desktop*
-
-<img src="">
-
-*404 - Mobile*
-
-</details>
-
-- - -
 
 ## Manual Testing
 ### Testing User Stories
