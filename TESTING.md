@@ -362,7 +362,6 @@ Throughout the development and testing phases, besides the enhancements mentione
 ### Known & Remaining Bugs
 The details about any remaining bugs are provided in the information above. For more detail, click on the links below:
 
-<!-->insert detail of any unresolved bugs <-->
 #### Excessive Rounds added to Quiz round counter on back navigation
 If you follow this flow:
 `Start Quiz -> View question round -> Navigate back to start quiz with browser back button -> Start Quiz again`
