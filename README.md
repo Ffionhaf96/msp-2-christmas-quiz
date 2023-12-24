@@ -3,7 +3,7 @@
 ![Mock-up]()
 
 #### **By Ffion Haf Edwards**
-[Click here to view the live web application]()
+[Click here to view the live web application](https://ffionhaf96.github.io/msp-2-christmas-quiz/index.html)
 
 This is the documentation for my web application: The Christmas Quiz. It has been built using HTML5, CSS3 & JavaScript for educational purposes as part of Code Institute’s Diploma in Web Application Development Course.
 
@@ -244,9 +244,8 @@ The website was launched on GitHub Pages using these steps:
 4. Press 'Save'.
 5. A link to the live website will be shown upon successful publication.
 
-The live website can be accessed [here](<insert deployment link >)
+The live website can be accessed [here](https://ffionhaf96.github.io/msp-2-christmas-quiz/index.html)
 
-<!-- TODO: Add the actual deployment link here later -->
 
 ### Forking the GitHub Repository
 
