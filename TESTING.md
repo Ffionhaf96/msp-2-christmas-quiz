@@ -1,6 +1,6 @@
 # The Christmas Quiz
 
-![Mock-up]()
+![Mock-up](./docs/images/mockup/mockup.png)
 
 #### **By Ffion Haf Edwards**
 [Click here to view the live web application]()
@@ -63,7 +63,7 @@ No validation errors were found. This is likely because VSCode has a [built-in C
 ### JavaScript Validation
 I used two methods to validate the JavaScript written. Firstly I used ESLint as it is the preffered industry standard for modern JavaScript linting and [integrates into VSCode via the ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) which gives feedback on JavaScript issues in real-time.
 
-[A comparison in package downloads](https://npmcharts.com/compare/jshint,eslint) shows that ESLint has ~32M downloads whereas JSHint has ~400K for the same period. 
+[A comparison in package downloads](https://npmcharts.com/compare/jshint,eslint) shows that ESLint has ~32M downloads whereas JSHint has ~400K for the same period.
 
 <details><summary>Microsoft itself even shows the JSLint extension for VSCode as deprecated</summary>
 <img src="./docs/images/testing/validation/JSHint-deprecated.png">
@@ -74,7 +74,6 @@ For the ESlint VSCode extension I used [AirBnB's Javascript Style Guide](https:/
 Nevertheless, I also subjected the JavaScript code of all the pages to validation using [JSHint](https://jshint.com/) as it was used in previous course example case studies.
 
 
-<!--> Insert details of any errors or warnings here <-->
 #### **JavaScript Validation Pre-Fix**
 <details><summary>Missing semicolons in all 3 files</summary>
 There were missing semicolons in all my JS files.
@@ -239,7 +238,7 @@ I conducted tests on the site in alignment with my defined user stories:
 <img src="./docs/images/testing/user-stories/discover-festive-knowledge.png">
 </details>
 
-s<details><summary>User Story 2: Engaging Visual Content</summary>
+<details><summary>User Story 2: Engaging Visual Content</summary>
 A summary of the results includes christmas themed images generated using OpenAI's DALL-E v3.
 <img src="./docs/images/testing/user-stories/engaging-content.jpeg">
 Fun Christmas emojis can be chosen as an avatar for the Quiz which appears next a users nickname in the results page.
@@ -259,7 +258,7 @@ https://github.com/Ffionhaf96/msp-2-christmas-quiz/assets/140890469/836290af-fdd
 The quiz can be enjoyed no matter what device is being used whether it's a small smartphone screen
 <img src="./docs/images/testing/user-stories/multi-device-smartphone.jpeg">
 or a bigger screen like on a desktop monitor or laptop
-<img src="./docs/images/testing/user-stories/multi-device-big-screen.jpeg">
+<img src="./docs/images/testing/user-stories/multi-device-big-screen.png">
 </details>
 
 <details><summary>User Story 5:  Ease of Navigation</summary>
