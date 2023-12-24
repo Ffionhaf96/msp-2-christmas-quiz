@@ -1,6 +1,6 @@
 # The Christmas Quiz
 
-![Mock-up]()
+![Mock-up](./docs/images/mockup/mockup.png)
 
 #### **By Ffion Haf Edwards**
 [Click here to view the live web application](https://ffionhaf96.github.io/msp-2-christmas-quiz/index.html)
