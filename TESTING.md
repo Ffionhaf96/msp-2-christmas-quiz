@@ -386,7 +386,7 @@ Throughout the development and testing phases, besides the enhancements mentione
 
 - Bug 6 - Passing an argument to function that handles click event made function immediately execute without click event which caused the  e.g. `houseRules.addEventListener('click', handleHouseRules(true)`
     - Fix: Passing the argument to the function via the [`bind`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind) method made the argument available to the function but didn't invoke a function call immediately.
-    ![console log showing both true and false arguments being triggered for the same function within 2 milliseconds](FILL IN WITH CONSOLE EPOCH IMG)
+    ![console log showing both true and false arguments being triggered for the same modal function within 2 milliseconds](/docs/images/testing/validation/modal-state-firing-twice-instantly.png).
 
 - - -
 ### Known & Remaining Bugs
