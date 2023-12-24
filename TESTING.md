@@ -11,7 +11,38 @@ This is the testing documentation for my web application: The Christmas Quiz.
 
 - - -
 ## Table of Contents
-<!--> will insert TOC once document is completed <-->
+- [Introduction](#introduction)
+- [Automated Checks and Validation](#automated-checks-and-validation)
+  * [HTML Validation](#html-validation)
+    + [**Errors**](#--errors--)
+    + [**HTML Validation Post-Fix**](#--html-validation-post-fix--)
+  * [CSS Validation](#css-validation)
+    + [**CSS Validation Result**](#--css-validation-result--)
+  * [JavaScript Validation](#javascript-validation)
+    + [**JavaScript Validation Pre-Fix**](#--javascript-validation-pre-fix--)
+    + [**JavaScript Validation Post-Fix**](#--javascript-validation-post-fix--)
+  * [Accessibility](#accessibility)
+    + [Summary](#summary)
+    + [**Accessibility Errors**](#--accessibility-errors--)
+    + [Possible headings alerts](#possible-headings-alerts)
+    + [Suspicious alt text alert on results page](#suspicious-alt-text-alert-on-results-page)
+    + [Contrast error found in Firefox devtools](#contrast-error-found-in-firefox-devtools)
+    + [**Wave Web Accessibility Results Post-Fix**](#--wave-web-accessibility-results-post-fix--)
+  * [Performance](#performance)
+    + [**Lighthouse Results**](#--lighthouse-results--)
+- [Manual Testing](#manual-testing)
+  * [Testing User Stories](#testing-user-stories)
+  * [Feature Testing](#feature-testing)
+    + [**Responsiveness / Device Testing**](#--responsiveness---device-testing--)
+    + [**Browser Compatibility**](#--browser-compatibility--)
+  * [Feature Testing Results Table](#feature-testing-results-table)
+    + [Site Wide](#site-wide)
+    + [Index Page](#index-page)
+    + [Quiz Page](#quiz-page)
+    + [Results Page](#results-page)
+- [Bugs & Fixes](#bugs---fixes)
+  * [Known & Remaining Bugs](#known---remaining-bugs)
+    + [Excessive Rounds added to Quiz round counter on back navigation](#excessive-rounds-added-to-quiz-round-counter-on-back-navigation)
 
 ## Introduction
 Welcome to the testing documentation for "The Christmas Quiz". This document provides a comprehensive overview of the various testing methods and procedures employed to ensure the web application is robust, user-friendly, and functions seamlessly across a range of devices and browsers.
