@@ -1,5 +1,5 @@
 /* Sitewide styles */
-
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
 html {
     background-color: var(--evergreen-green);
     color: #000;
