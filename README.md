@@ -96,17 +96,22 @@ The Christmas Quiz is all about celebrating the holiday season through an engagi
 I chose to create detailed wireframes for "The Christmas Quiz" using diagrams.net, focusing on the structure, skeleton, and layout, as well as the overall style and appearance of the site. This approach allowed me to make critical design decisions regarding colors, fonts, and layout before starting the coding process. The wireframes were developed for desktop, tablet, and mobile views to ensure that responsiveness was a key consideration from the start.
 
 <details><summary>Welcome Screen</summary>
-<img src="insert">
+<img src="/docs/images/wireframes/welcome.png">
 The welcome screen wireframe illustrates the initial user interface, with festive design elements and a start button to engage users.
 </details>
 
+<details><summary>House Rules Modal</summary>
+<img src="/docs/images/wireframes/.png">
+The house rules modal will sit ontop of the welcome screen when the "house rules" button is pressed to show the user expected ettiqute and remind them to have some spirited Christmas fun.
+</details>
+
 <details><summary>Quiz Interface</summary>
-<img src="insert">
+<img src="/docs/images/wireframes/quiz-screen.png">
 This wireframe shows the quiz layout, including the question and answer options, designed to be user-friendly and visually appealing.
 </details>
 
 <details><summary>Results Screen</summary>
-<img src="insert">
+<img src="/docs/images/wireframes/results-screen.png">
 The results screen wireframe displays how users' festive profiles and suggestions will be presented at the end of the quiz.
 </details>
 
