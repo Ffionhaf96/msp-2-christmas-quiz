@@ -40,7 +40,7 @@ async function getQuiz() {
         console.error('Fetch error:', error);
     }
 }
-
+let timerId = null;
 async function showQuestion(index) {
     const data = await getQuiz();
     
@@ -80,31 +80,32 @@ async function showQuestion(index) {
 
 
 async function startTimer() {
-
+    let startTime = 10000;
     //get the timer text element
     const timerElement = document.querySelector('#timer .time-text');
-    // 10 seconds in ms
-    let startTime = 10000;
-
+    timerElement.textContent = 10;
+    if (timerId) {
+        clearInterval(timerId);
+    }
     // use setInterval so we can update the question countdown clock to build tension https://developer.mozilla.org/docs/Web/API/setInterval
-    const interval = setInterval(() => {
-        // Decrement the time by 10 milliseconds
-        startTime -= 10;
+    timerId = setInterval(() => {
+        // Decrement the time by 1
+        startTime -= 1000;
         // Convert to seconds and format to 2 decimal places
-        const seconds = (startTime / 1000).toFixed(2);
+        const seconds = (startTime / 1000);
 
         // Update the display with ternary operator https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator
-        timerElement.textContent = seconds > 0 ? seconds : '0.00';
+        timerElement.textContent = seconds > 0 ? seconds : '0';
 
         // stop the time
         if (startTime <= 0) {
-            clearInterval(interval);
+            clearInterval(timerId);
             // Player has ran out of time
             // Pick the last selected item in the list and move player to next question
             handleSubmitAnswer();
         }
-        // Update every 10 milliseconds
-    }, 10);
+        // Update every second
+    }, 1000);
 
 }
 
