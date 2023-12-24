@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+html {
+    background-color: var(--evergreen-green);
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Mountains of Christmas', serif;
+    color: var(--snowy-white);
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Color variables and Standard Units*/
+:root {
+    --classic-red: rgba(255, 0, 0, 1);
+    --evergreen-green: rgba(1, 50, 32, 1);
+    --snowy-white: rgba(255, 255, 255, 1);
+    --gold: rgba(255, 215, 0, 1);
+    --midnight-blue: rgba(0, 0, 139, 1);
+    --selection-white: rgba(255,255,255,0.3);
+    --component-width: 80%;
+}
+
+main {
+    display: grid;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+}
+
+a:visited {
+    color: var(--snowy-white);
+}
