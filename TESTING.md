@@ -363,8 +363,13 @@ Throughout the development and testing phases, besides the enhancements mentione
 The details about any remaining bugs are provided in the information above. For more detail, click on the links below:
 
 <!-->insert detail of any unresolved bugs <-->
+#### Excessive Rounds added to Quiz round counter on back navigation
+If you follow this flow:
+`Start Quiz -> View question round -> Navigate back to start quiz with browser back button -> Start Quiz again`
 
-- - -
-- - -
+You will see the Round counter is incorrect until the next question is viewed.
+<details><summary>Incorrect rounds displayed</summary>
+<img src="./docs/images/testing/validation/excessive-rounds-bug.png">
+</details>
 
 [Go to README](README.md)
