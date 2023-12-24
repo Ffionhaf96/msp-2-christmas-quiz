@@ -243,7 +243,11 @@ I conducted tests on the site in alignment with my defined user stories:
 </details>
 
 <details><summary>User Story 3: Understanding Quiz Results</summary>
-<img src="">
+
+
+https://github.com/Ffionhaf96/msp-2-christmas-quiz/assets/140890469/836290af-fdda-4c9d-8ee0-8ee1e11f1805
+
+
 </details>
 
 <details><summary>User Story 4: Multi-Device Accessibility</summary>
