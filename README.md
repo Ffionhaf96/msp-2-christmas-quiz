@@ -101,7 +101,7 @@ The welcome screen wireframe illustrates the initial user interface, with festiv
 </details>
 
 <details><summary>House Rules Modal</summary>
-<img src="/docs/images/wireframes/.png">
+<img src="/docs/images/wireframes/house-rules.png">
 The house rules modal will sit ontop of the welcome screen when the "house rules" button is pressed to show the user expected ettiqute and remind them to have some spirited Christmas fun.
 </details>
 
