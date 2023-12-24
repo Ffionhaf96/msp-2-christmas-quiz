@@ -205,15 +205,15 @@ As this was the simplest page it was not particularly difficult to achieve a 100
 </details>
 
 <details><summary>404</summary>
-<img src="">
 
 *404 - Desktop*
 
-<img src="">
+<img src="/docs/images/testing/performance/lighthouse-desktop-404-99.png">
 
 *404 - Mobile*
 
-<img src="">
+<img src="/docs/images/testing/performance/lighthouse-mobile-404-90.png">
+
 
 </details>
 
