@@ -54,38 +54,61 @@ I subjected the HTML code of all the pages to validation using the [W3C HTML Val
 
 ### CSS Validation
 
-I subjected the CSS code of all the pages to validation using the  [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input). 
+I validated all CSS code in `style.css` using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input). 
 
-#### **Errors**
 
-<details><summary>CSS Validation Initial Results</summary>
-<img src="">
+#### **CSS Validation Result**
+
+No validation errors were found. This is likely because VSCode has a [built-in CSS linter](https://code.visualstudio.com/docs/languages/css#_syntax-verification-linting)
+
+<details><summary>CSS Jigsaw Validation Final Results</summary>
+<img src="./docs/images/testing/validation/jigsaw-no-error.png">
 </details>
 
-There were [insert number] errors:
-
-<details><summary>Error 1</summary>
-<img src="">
-</details>
-
-#### **CSS Validation Post-Fix**
-
-<details><summary>CSS Validation Final Results</summary>
-<img src="">
-</details>
-
-- - -
 
 ### JavaScript Validation
+I used two methods to validate the JavaScript written. Firstly I used ESLint as it is the preffered industry standard for modern JavaScript linting and [integrates into VSCode via the ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) which gives feedback on JavaScript issues in real-time.
 
-I subjected the JavaScript code of all the pages to validation using the [JSHint](https://jshint.com/). 
+[A comparison in package downloads](https://npmcharts.com/compare/jshint,eslint) shows that ESLint has ~32M downloads whereas JSHint has ~400K for the same period. 
+
+<details><summary>Microsoft itself even shows the JSLint extension for VSCode as deprecated</summary>
+<img src="./docs/images/testing/validation/JSHint-deprecated.png">
+</details>
+
+For the ESlint VSCode extension I used [AirBnB's Javascript Style Guide](https://github.com/airbnb/javascript) to adhere to good JavaScript practices. This can be seen in the `./assets/js/.eslintrc.js` file. Many issues were automatically flagged and fixed using this such as [no-use-before-define](https://eslint.org/docs/latest/rules/no-use-before-define) errors where I was calling a function before defining it.
+
+Nevertheless, I also subjected the JavaScript code of all the pages to validation using [JSHint](https://jshint.com/) as it was used in previous course example case studies.
+
 
 <!--> Insert details of any errors or warnings here <-->
+#### **JavaScript Validation Pre-Fix**
+<details><summary>Missing semicolons in all 3 files</summary>
+There were missing semicolons in all my JS files.
+<img src="./docs/images/testing/validation/es-lint-missing-semis.png">
+</details>
+
+<details><summary>Unused variables in loop forEach loops</summary>
+In my forEach loops I was referencing an unused index in two occassions.
+<img src="./docs/images/testing/validation/es-lint-indexjs-no-unused-vars.png">
+</details>
+
+<details><summary>JavaScript Validation Final Results</summary>
+JSHint picked up on a better style for accessing a property of an element.
+<img src="./docs/images/testing/validation/js-hint-index.png">
+</details>
 
 #### **JavaScript Validation Post-Fix**
 
 <details><summary>JavaScript Validation Final Results</summary>
-<img src="">
+<img src="./docs/images/testing/validation/js-hint-index.png">
+</details>
+
+<details><summary>JavaScript Validation Final Results</summary>
+<img src="./docs/images/testing/validation/js-hint-index.png">
+</details>
+
+<details><summary>JavaScript Validation Final Results</summary>
+<img src="./docs/images/testing/validation/js-hint-index.png">
 </details>
 
 
@@ -147,9 +170,9 @@ I utilized Google Chrome Dev Tools' Lighthouse to assess the performance of the 
 <details><summary>Performance Emulation</summary>
 All Mobile benchmarks in Chrome Dev Tool's Lighthouse were ran emulating a Moto G Power smartphone using Chromium 120.0.0.0 and a slow 4G network connection.
 <img src="/docs/images/testing/performance/lighthose-mobile-simulated-env.png">
+Desktop benchmarks did not have any emualtion applied.
 </details>
 
-Desktop benchmarks did not have any emualtion applied.
 
 <details><summary>Home Page</summary>
 As this was the simplest page it was not particularly difficult to achieve a 100 lighthouse score. There is no data being fetched nor is there any big LCP or CLS to be concerned about because there is no dynamic elements.
