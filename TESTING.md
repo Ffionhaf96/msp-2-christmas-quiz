@@ -159,6 +159,7 @@ I utilized Google Chrome Dev Tools' Lighthouse to assess the performance of the 
 
 
 #### **Lighthouse Results**
+All metrics on the Lighthouse scores for both mobile and desktop reached at minimum the green band with many pages reaching 100.
 <details><summary>Performance Emulation</summary>
 All Mobile benchmarks in Chrome Dev Tool's Lighthouse were ran emulating a Moto G Power smartphone using Chromium 120.0.0.0 and a slow 4G network connection.
 <img src="/docs/images/testing/performance/lighthose-mobile-simulated-env.png">
