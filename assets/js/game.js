@@ -95,7 +95,7 @@ async function showQuestion(index) {
       return window.location.href = 'results.html';
   }
   const levelNumber = document.querySelector('.level-number');
-  levelNumber.textContent = `Round ${index+1} / 5`;
+  levelNumber.textContent = `Round ${index} / ${data.questions.length}`;
   index++;
   const choices = question.choices;
 

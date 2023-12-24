@@ -54,7 +54,217 @@
         "Frosty the Snowman"
       ],
       "answer": "Jingle Bells"
+    },
+    {
+      "question": "In the song 'Twelve Days of Christmas,' what is given on the 7th day?",
+      "choices": [
+        "Swans a-swimming",
+        "Maids a-milking",
+        "Lords a-leaping",
+        "Drummers drumming",
+        "Geese a-laying"
+      ],
+      "answer": "Swans a-swimming"
+    },
+    {
+      "question": "Who is the author of 'A Christmas Carol'?",
+      "choices": [
+        "Charles Dickens",
+        "Mark Twain",
+        "J.R.R. Tolkien",
+        "Ernest Hemingway",
+        "Jane Austen"
+      ],
+      "answer": "Charles Dickens"
+    },
+    {
+      "question": "What are the two other most popular names for Santa Claus?",
+      "choices": [
+        "Father Christmas and Saint Nicholas",
+        "Kris Kringle and Saint Peter",
+        "Father Time and Kris Kringle",
+        "Saint Nick and Kris Kringle",
+        "Chris Cringle and Father Christmas"
+      ],
+      "answer": "Father Christmas and Saint Nicholas"
+    },
+    {
+      "question": "What popular Christmas beverage is also called 'milk punch'?",
+      "choices": [
+        "Hot chocolate",
+        "Apple cider",
+        "Eggnog",
+        "Mulled wine",
+        "Irish coffee"
+      ],
+      "answer": "Eggnog"
+    },
+    {
+      "question": "What did the other reindeer not let Rudolph do because of his shiny red nose?",
+      "choices": [
+        "Join in any reindeer games",
+        "Pull Santa's sleigh",
+        "Eat with them",
+        "Sing carols",
+        "Enter the reindeer barn"
+      ],
+      "answer": "Join in any reindeer games"
+    },
+    {
+      "question": "Which Christmas song contains the lyric 'Everyone dancing merrily in the new old-fashioned way'?",
+      "choices": [
+        "Winter Wonderland",
+        "Jingle Bell Rock",
+        "Rockin' Around the Christmas Tree",
+        "Let It Snow",
+        "White Christmas"
+      ],
+      "answer": "Rockin' Around the Christmas Tree"
+    },
+    {
+      "question": "In which modern-day country was Saint Nicholas born?",
+      "choices": [
+        "Germany",
+        "Turkey",
+        "Norway",
+        "England",
+        "Italy"
+      ],
+      "answer": "Turkey"
+    },
+    {
+      "question": "What Christmas-themed ballet premiered in Saint Petersburg, Russia in 1892?",
+      "choices": [
+        "The Nutcracker",
+        "Swan Lake",
+        "Coppélia",
+        "Giselle",
+        "Sleeping Beauty"
+      ],
+      "answer": "The Nutcracker"
+    },
+    {
+      "question": "What is the main color of the Grinch, who is known for stealing Christmas?",
+      "choices": [
+        "Red",
+        "Green",
+        "Blue",
+        "Yellow",
+        "Purple"
+      ],
+      "answer": "Green"
+    },
+    {
+      "question": "What Christmas decoration was originally made from strands of silver?",
+      "choices": [
+        "Tinsel",
+        "Ornaments",
+        "Wreaths",
+        "Lights",
+        "Garlands"
+      ],
+      "answer": "Tinsel"
+    },
+    {
+      "question": "Which country is credited with the creation of the Christmas beverage, Eggnog?",
+      "choices": [
+        "England",
+        "France",
+        "Germany",
+        "United States",
+        "Canada"
+      ],
+      "answer": "England"
+    },
+    {
+      "question": "What would you be likely to find under the 'Upside-Down Christmas Tree'?",
+      "choices": [
+        "Gifts",
+        "Shoes",
+        "Candy",
+        "A star",
+        "A bell"
+      ],
+      "answer": "Gifts"
+    },
+    {
+      "question": "Which Christmas song's second verse starts with 'O tidings of comfort and joy'?",
+      "choices": [
+        "O Christmas Tree",
+        "God Rest Ye Merry Gentlemen",
+        "The First Noel",
+        "Silent Night",
+        "Hark! The Herald Angels Sing"
+      ],
+      "answer": "God Rest Ye Merry Gentlemen"
+    },
+    {
+      "question": "In the movie 'Elf', what was the first rule of The Code of Elves?",
+      "choices": [
+        "Treat every day like Christmas",
+        "There's room for everyone on the nice list",
+        "The best way to spread Christmas cheer is singing loud for all to hear",
+        "Never lie",
+        "Always wear your hat"
+      ],
+      "answer": "Treat every day like Christmas"
+    },
+    {
+      "question": "What figure from English folklore is associated with Santa Claus?",
+      "choices": [
+        "Father Time",
+        "Jack Frost",
+        "Father Christmas",
+        "King Wenceslas",
+        "The Snowman"
+      ],
+      "answer": "Father Christmas"
+    },
+    {
+      "question": "What is the name of the red-nosed reindeer?",
+      "choices": [
+        "Dancer",
+        "Blitzen",
+        "Comet",
+        "Rudolph",
+        "Vixen"
+      ],
+      "answer": "Rudolph"
+    },
+    {
+      "question": "Which real-life person is Santa Claus based on?",
+      "choices": [
+        "The Christian bishop Saint Nicholas",
+        "The Norse god Odin",
+        "The British figure Father Christmas",
+        "The Germanic god Thor",
+        "The Dutch figure Sinterklaas"
+      ],
+      "answer": "The Christian bishop Saint Nicholas"
+    },
+    {
+      "question": "In Charles Dickens' 'A Christmas Carol', what was the first name of Scrooge?",
+      "choices": [
+        "Ebenezer",
+        "Edward",
+        "Edwin",
+        "Ernest",
+        "Eliot"
+      ],
+      "answer": "Ebenezer"
+    },
+    {
+      "question": "What popular holiday plant is known to be an aphrodisiac?",
+      "choices": [
+        "Holly",
+        "Ivy",
+        "Mistletoe",
+        "Poinsettia",
+        "Fir"
+      ],
+      "answer": "Mistletoe"
     }
+    
   ],
   "resultCategories": [
     {
